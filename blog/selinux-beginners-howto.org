@@ -2,7 +2,6 @@
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
 #+DATE:        2017-10-03 Tue
-#+URI:         /blog/%y/%m/%d/how-to-по-selinux-базовые-принципы
 #+KEYWORDS:    SELinux, безопасность, linux, администрирование
 #+TAGS:        SELinux, безопасность, linux, администрирование
 #+LANGUAGE:    ru

@@ -2,7 +2,6 @@
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
 #+DATE:        2017-10-03 Tue
-#+URI:         /blog/%y/%m/%d/perl-библиотека-расстановки-переносов
 #+KEYWORDS:    perl, AI, neural network
 #+TAGS:        perl, AI, neural network
 #+LANGUAGE:    ru
