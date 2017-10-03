@@ -3,7 +3,7 @@
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+TAGS: emacs, org-mode, blogging
+#+TAGS:        emacs, org-mode, blogging
 
 Опять устал от ущербности систем ведения журналов. Поэтому переезжаю
 на блоги из org-mode, сделать это наверное стоило ещё лет 10 назад.
