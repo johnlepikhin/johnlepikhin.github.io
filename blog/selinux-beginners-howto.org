@@ -24,7 +24,7 @@ yum install setools-console policycoreutils-python
 
 ** Политики
 
-Для всей системы задается <<<policy>>>, которая будет применена ко всем
+Для всей системы задается <<policy>>policy, которая будет применена ко всем
 объектам. По умолчанию действует политика targeted. Политика задается
 в файле ~/etc/sysconfig/selinux~
 
@@ -42,9 +42,9 @@ yum install setools-console policycoreutils-python
 ** Режимы SELinux
 
  - disabled: SELinux выключен
- - <<<enforcing>>>: включен, правила блокируют, сообщения о блокировке
+ - <<enforcing>> ~enforcing~: включен, правила блокируют, сообщения о блокировке
    уходят в ~/var/log/audit/audit.log~
- - <<<permissive>>>: ничего не блокируется, только уходят сообщения в
+ - <<permissive>> ~permissive~: ничего не блокируется, только уходят сообщения в
    ~/var/log/audit/audit.log~
 
 Переключиться в permissive:
@@ -61,15 +61,15 @@ setenforce 1
 
 ** Контексты
 
-Каждый объект мира (файл, процесс и т.д.) имеют свойство <<<context>>>. В
+Каждый объект мира (файл, процесс и т.д.) имеют свойство <<context>>context. В
 SELinux совершенно не важно кто и куда сделал su, fork и т.д. —
 контекст наследуется до тех пор, пока явно в правилах SELinux не
 сказано, что надо сменить контекст
 
 Каждый контекст состоит из трех частей:
- 1. <<<user>>>
- 2. <<<role>>>
- 3. <<<type>>> (у процессов его принято называть <<<domain>>>, но разницы никакой нет)
+ 1. <<user>> ~user~
+ 2. <<role>> ~role~
+ 3. <<type>> ~type~ (у процессов его принято называть <<domain>>domain, но разницы никакой нет)
 
 Для файлов контекст можно посмотреть так:
 
@@ -79,9 +79,9 @@ dr-xr-xr-x. root root system_u:object_r:root_t:s0      /
 #+END_EXAMPLE
 
 Здесь:
- - system_u — user
- - object_r — role
- - s0 — type
+ - ~system_u~: user
+ - ~object_r~: role
+ - ~s0~: type
 
 Аналогично, можно посмотреть для процессов:
 
@@ -160,7 +160,7 @@ type_transition unconfined_t mytype_exec_t : process mytype_t;
 make && make load
 #+END_SRC
 
-<<<make reload>>> Загрузить заново после пересборки:
+Загрузить заново после пересборки:
 
 #+BEGIN_SRC sh
 make && make reload
@@ -178,7 +178,7 @@ setenforce 1
 Сейчас у бинарника нет ни на что прав, поэтому в последней строчке
 должны получить ~/root/test: Permission denied~.
 
-*** Добавление правил с помощью <<<audit2allow>>>
+*** Добавление правил с помощью <<audit2allow>>audit2allow
 
 Утилита предназначена для генерации правил на основе лога [[Аудит][аудита]].
 
@@ -186,7 +186,7 @@ setenforce 1
 grep mytype /var/log/audit/audit.log | audit2allow -m mytype >my_module.te
 #+END_SRC
 
-Теперь можно поправить модуль, затем заново его [[make reload][загрузить]].
+Теперь можно поправить модуль, затем заново его [[*Сборка и загрузка][загрузить]].
 
 ** Полезные правила
 
