@@ -1,6 +1,5 @@
 #+TITLE: Initial commit
 #+DATE: 2017-09-30
-#+OPTIONS: toc:nil
 #+TAGS: emacs, org-mode, blogging
 
 Опять устал от ущербности систем ведения журналов. Поэтому переезжаю
