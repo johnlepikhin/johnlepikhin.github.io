@@ -49,6 +49,8 @@ graph example {
 }
 #+END_SRC
 
+ - Я могу рисовать таблички без HTML-боли:
+
 #+CAPTION: Random-генератор от Партии
 | Год | 1971 | 1976 | 1982 | 1999 |
 |---+---+---+---+---|
@@ -64,7 +66,7 @@ print "$a\n";
 
  - Из редактора возможно запускать не только кусочки кода, но и например вызывать [[shell:urxvt -e ssh root@microsoft.com][внешние команды]][fn::[[http://orgmode.org/manual/External-links.html]]] (читателям из браузера так не получится). И конечно же ссылаться [[*Текстовые файлы][внутри документа]].
 
- - Или например вставлять ссылки на YouTube:
+ - Или например вставлять видео с YouTube[fn::[[http://endlessparentheses.com/embedding-youtube-videos-with-org-mode-links.html]]]:
 
 yt:WpHYagYDeSg
 
