@@ -1,6 +1,7 @@
 #+TITLE: Initial commit
 #+DATE: 2017-09-30
 #+TAGS: emacs, org-mode, blogging
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 
 Опять устал от ущербности систем ведения журналов. Поэтому переезжаю
 на блоги из org-mode, сделать это наверное стоило ещё лет 10 назад.
