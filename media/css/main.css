@@ -251,21 +251,18 @@ table th.right, table td.right {
 .post li {
     /* list-style: none outside none; */
     text-align: justify;
+    margin-left: 2em;
 }
 .post ul {
     list-style-type: circle;
 }
 .post ul > li:before {
-    margin-left: -1.25em;
     color: #ccc;
 }
 .post ol {
     counter-reset: o-list;
 }
 .post ol > li:before {
-    content: counter(o-list) ") ";
-    counter-increment: o-list;
-    margin-left: -1.85em;
     color: #ccc;
 }
 
