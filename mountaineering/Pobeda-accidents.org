@@ -60,9 +60,11 @@
 
 Для наглядности картинка:
 
+#+NAME: plot
 #+begin_src gnuplot :var data=DATA :exports results :file altitudes.png
 set terminal png enhanced
 set encoding utf8
 set xrange [4200:7500]
 plot data using 1:2 title "count" smooth csplines
 #+end_src
+#+RESULTS: fig:plot
