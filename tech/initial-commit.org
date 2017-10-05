@@ -35,14 +35,14 @@
  - Я могу описывать UML-диаграммы в тексте[fn::[[http://plantuml.com/emacs]]]:
 
 #+CAPTION: UML
-#+BEGIN_SRC plantuml :file images/plantuml-example.png
+#+BEGIN_SRC plantuml :file ./images/plantuml-example.png
   Alice -> Bob: Authentication Request
   Bob --> Alice: Authentication Response
 #+END_SRC
 
  - Я могу рисовать dot-диаграммы по месту[fn::[[http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-dot.html]]]:
 
-#+BEGIN_SRC dot :file images/graphviz-example.png :exports results
+#+BEGIN_SRC dot :file ./images/graphviz-example.png :exports results
 graph example { 
         a -- b;
         b -- c;
