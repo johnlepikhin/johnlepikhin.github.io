@@ -1,7 +1,7 @@
 #+TITLE:       Статистика несчастных случаев на Победе
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
-#+DATE:        2017-10-05 Thu
+#+DATE:        2016-03-12
 #+URI:         /blog/%y/%m/%d/статистика-несчастных-случаев-на-победе
 #+KEYWORDS:    Победа, альпинизм, НС
 #+TAGS:        Победа, альпинизм, НС
