@@ -28,20 +28,25 @@
 
  - Я могу за секунду прямо из редактора вставить скриншот[fn::[[https://github.com/dfeich/org-screenshot]]]
 
+#+CAPTION: Пример скриншота
 [[file:./images/screenshot-02.png]]
 
  - Я могу писать математику прямо как в $\LaTeX: \forall x \in X, \quad \exists y \leq \epsilon$
 
  - Я могу описывать UML-диаграммы в тексте[fn::[[http://plantuml.com/emacs]]]:
 
-#+CAPTION: UML
+#+NAME: uml_example
 #+BEGIN_SRC plantuml :file ./images/plantuml-example.png
   Alice -> Bob: Authentication Request
   Bob --> Alice: Authentication Response
 #+END_SRC
+#+CAPTION: Пример диаграммы UML
+#+LABEL: fig:uml_example
+#+RESULTS: fig:uml_example
 
  - Я могу рисовать dot-диаграммы по месту[fn::[[http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-dot.html]]]:
 
+#+NAME: dot_example
 #+BEGIN_SRC dot :file ./images/graphviz-example.png :exports results
 graph example { 
         a -- b;
@@ -50,6 +55,9 @@ graph example {
         d -- a;
 }
 #+END_SRC
+#+CAPTION: Пример графа Graphviz
+#+LABEL: fig:dot_example
+#+RESULTS: fig:dot_example
 
  - Я могу рисовать таблички без HTML-боли:
 
@@ -60,6 +68,7 @@ graph example {
 
  - Ну и разумеется исходники (кстати, я могу запускать их прямо по месту написания[fn::[[http://orgmode.org/manual/Evaluating-code-blocks.html]]]):
 
+#+CAPTION: Пример кода на Perl
 #+BEGIN_SRC perl -n
 my $a = 2**8;
 
