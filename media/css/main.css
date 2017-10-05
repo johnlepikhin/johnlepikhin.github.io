@@ -252,8 +252,10 @@ table th.right, table td.right {
     list-style: none outside none;
     text-align: justify;
 }
+.post ul {
+    list-style-type: circle;
+}
 .post ul > li:before {
-    content: "⚫ ";
     margin-left: -1.25em;
     color: #ccc;
 }
