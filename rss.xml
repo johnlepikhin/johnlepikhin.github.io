@@ -4,8 +4,8 @@
     <title>The great nothingness</title>
     <link>https://johnlepikhin.github.io</link>
     <description>.</description>
-    <pubDate>Thu, 05 Oct 2017 15:43:50 MSK</pubDate>
-    <lastBuildDate>Thu, 05 Oct 2017 15:43:50 MSK</lastBuildDate>
+    <pubDate>Thu, 05 Oct 2017 15:44:46 MSK</pubDate>
+    <lastBuildDate>Thu, 05 Oct 2017 15:44:46 MSK</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -19,13 +19,13 @@
 на бло&shy;ги из org-mode, сде&shy;лать это на&shy;вер&shy;ное сто&shy;ило ещё лет 10 на&shy;зад.
 </p>
 
-<div id="outline-container-orgbe751ae" class="outline-2">
-<h2 id="orgbe751ae">Поче&shy;му это удоб&shy;нее?</h2>
-<div class="outline-text-2" id="text-orgbe751ae">
+<div id="outline-container-orgf10d32c" class="outline-2">
+<h2 id="orgf10d32c">Поче&shy;му это удоб&shy;нее?</h2>
+<div class="outline-text-2" id="text-orgf10d32c">
 </div>
-<div id="outline-container-orgaa39699" class="outline-3">
-<h3 id="orgaa39699">Тек&shy;сто&shy;вые фай&shy;лы</h3>
-<div class="outline-text-3" id="text-orgaa39699">
+<div id="outline-container-org7a466f5" class="outline-3">
+<h3 id="org7a466f5">Тек&shy;сто&shy;вые фай&shy;лы</h3>
+<div class="outline-text-3" id="text-org7a466f5">
 <ul class="org-ul">
 <li>Прак&shy;ти&shy;чес&shy;ки бес&shy;плат&shy;но по ис&shy;поль&shy;зо&shy;ва&shy;нию ре&shy;сур&shy;сов, я мо&shy;гу хо&shy;стить
 блог бук&shy;валь&shy;но где угод&shy;но<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
@@ -40,9 +40,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgd0fd4a2" class="outline-3">
-<h3 id="orgd0fd4a2">Сила org-mode</h3>
-<div class="outline-text-3" id="text-orgd0fd4a2">
+<div id="outline-container-orgd6f59a8" class="outline-3">
+<h3 id="orgd6f59a8">Сила org-mode</h3>
+<div class="outline-text-3" id="text-orgd6f59a8">
 <ul class="org-ul">
 <li>Я мо&shy;гу за се&shy;кун&shy;ду пря&shy;мо из ре&shy;дак&shy;то&shy;ра вста&shy;вить ск&shy;рин&shy;шот<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup></li>
 </ul>
@@ -125,7 +125,7 @@
 </div>
 
 <ul class="org-ul">
-<li>Из ре&shy;дак&shy;то&shy;ра возмож&shy;но за&shy;пус&shy;кать не толь&shy;ко ку&shy;соч&shy;ки ко&shy;да, но и на&shy;при&shy;мер вы&shy;зы&shy;вать <a href="urxvt -e ssh root@microsoft.com">внеш&shy;ние ко&shy;ман&shy;ды</a><sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup> (чи&shy;та&shy;те&shy;лям из бра&shy;уз&shy;ера так не по&shy;лу&shy;чит&shy;ся). И ко&shy;неч&shy;но же ссы&shy;лать&shy;ся <a href="#orgaa39699">вн&shy;ут&shy;ри до&shy;ку&shy;мен&shy;та</a>.</li>
+<li>Из ре&shy;дак&shy;то&shy;ра возмож&shy;но за&shy;пус&shy;кать не толь&shy;ко ку&shy;соч&shy;ки ко&shy;да, но и на&shy;при&shy;мер вы&shy;зы&shy;вать <a href="urxvt -e ssh root@microsoft.com">внеш&shy;ние ко&shy;ман&shy;ды</a><sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup> (чи&shy;та&shy;те&shy;лям из бра&shy;уз&shy;ера так не по&shy;лу&shy;чит&shy;ся). И ко&shy;неч&shy;но же ссы&shy;лать&shy;ся <a href="#org7a466f5">вн&shy;ут&shy;ри до&shy;ку&shy;мен&shy;та</a>.</li>
 
 <li>Или на&shy;при&shy;мер встав&shy;лять вид&shy;ео с YouTube<sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup>:</li>
 </ul>
@@ -136,9 +136,9 @@
 </div>
 </div>
 
-<div id="outline-container-org89839d7" class="outline-3">
-<h3 id="org89839d7">Совмес&shy;ти&shy;мость</h3>
-<div class="outline-text-3" id="text-org89839d7">
+<div id="outline-container-orgacf313f" class="outline-3">
+<h3 id="orgacf313f">Совмес&shy;ти&shy;мость</h3>
+<div class="outline-text-3" id="text-orgacf313f">
 <p>
 Дав&shy;но пи&shy;шу в org-mode свою жизнь. Это и до&shy;ку&shy;мен&shy;та&shy;ция по ра&shy;бо&shy;те, и ка&shy;кие-то лич&shy;ные де&shy;ла, и спи&shy;ски TODO (жаль нет но&shy;рмаль&shy;но&shy;го ре&shy;ше&shy;ния для мо&shy;бил&shy;ьных уст&shy;рой&shy;ств). Поэ&shy;то&shy;му для ме&shy;ня это чуть
 ли не ид&shy;еаль&shy;ный ва&shy;ри&shy;ант для ор&shy;га&shy;ни&shy;за&shy;ции бло&shy;га: еди&shy;ный фор&shy;мат.
@@ -147,9 +147,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgf5578de" class="outline-2">
-<h2 id="orgf5578de">Ито&shy;го</h2>
-<div class="outline-text-2" id="text-orgf5578de">
+<div id="outline-container-org9489cf2" class="outline-2">
+<h2 id="org9489cf2">Ито&shy;го</h2>
+<div class="outline-text-2" id="text-org9489cf2">
 <p>
 Коро&shy;че го&shy;во&shy;ря, то, че&shy;го услов&shy;ный Wordpress вот-вот (ещё
 чуть-чуть!) час&shy;тич&shy;но до&shy;бь&shy;ет&shy;ся де&shy;сят&shy;ка&shy;ми мега&shy;ба&shy;йт PHP-ко&shy;да и ми&shy;лли&shy;она&shy;ми
@@ -164,20 +164,20 @@
 </div>
 </div>
 
-<div id="outline-container-orgf9b0d15" class="outline-2">
-<h2 id="orgf9b0d15">Что до&shy;де&shy;лать</h2>
-<div class="outline-text-2" id="text-orgf9b0d15">
+<div id="outline-container-org617f37d" class="outline-2">
+<h2 id="org617f37d">Что до&shy;де&shy;лать</h2>
+<div class="outline-text-2" id="text-org617f37d">
 <p>
 Мне бли&shy;зок дух пер&shy;фек&shy;ци&shy;онис&shy;та, по&shy;это&shy;му хо&shy;те&shy;лось бы до&shy;пи&shy;лить:
 </p>
 </div>
 
-<div id="outline-container-orgcd6c902" class="outline-3">
-<h3 id="orgcd6c902"><span class="todo TODO">TODO</span> Возмож&shy;ность быст&shy;ро по&shy;стить ко&shy;ти&shy;ков</h3>
+<div id="outline-container-org243ed6c" class="outline-3">
+<h3 id="org243ed6c"><span class="todo TODO">TODO</span> Возмож&shy;ность быст&shy;ро по&shy;стить ко&shy;ти&shy;ков</h3>
 </div>
-<div id="outline-container-org276e24f" class="outline-3">
-<h3 id="org276e24f"><span class="todo TODO">TODO</span> Вме&shy;ня&shy;емые мак&shy;ро&shy;сы</h3>
-<div class="outline-text-3" id="text-org276e24f">
+<div id="outline-container-orge7de860" class="outline-3">
+<h3 id="orge7de860"><span class="todo TODO">TODO</span> Вме&shy;ня&shy;емые мак&shy;ро&shy;сы</h3>
+<div class="outline-text-3" id="text-orge7de860">
 <p>
 Для ме&shy;ня по&shy;ка за&shy;гад&shy;ка, по&shy;че&shy;му в org-mode пред&shy;поч&shy;ли собст&shy;вен&shy;ный фор&shy;мат
 мак&shy;ро&shy;сов, ког&shy;да есть за&shy;ме&shy;ча&shy;тель&shy;ные мак&shy;ро&shy;сы \(\LaTeX\) (ко&shy;то&shy;рые час&shy;тич&shy;но
@@ -186,9 +186,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgaa49c34" class="outline-3">
-<h3 id="orgaa49c34"><span class="done DONE">DONE</span> Пере&shy;но&shy;сы слов</h3>
-<div class="outline-text-3" id="text-orgaa49c34">
+<div id="outline-container-org1d0a5cd" class="outline-3">
+<h3 id="org1d0a5cd"><span class="done DONE">DONE</span> Пере&shy;но&shy;сы слов</h3>
+<div class="outline-text-3" id="text-org1d0a5cd">
 </div>
 </div>
 </div>
