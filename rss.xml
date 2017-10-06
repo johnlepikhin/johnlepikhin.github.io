@@ -4,8 +4,8 @@
     <title>The great nothingness</title>
     <link>https://johnlepikhin.github.io</link>
     <description>.</description>
-    <pubDate>Sat, 07 Oct 2017 00:47:51 MSK</pubDate>
-    <lastBuildDate>Sat, 07 Oct 2017 00:47:51 MSK</lastBuildDate>
+    <pubDate>Sat, 07 Oct 2017 00:51:58 MSK</pubDate>
+    <lastBuildDate>Sat, 07 Oct 2017 00:51:58 MSK</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -90,13 +90,13 @@
 на бло&shy;ги из org-mode, сде&shy;лать это на&shy;вер&shy;ное сто&shy;ило ещё лет 10 на&shy;зад.
 </p>
 
-<div id="outline-container-org7ad4df9" class="outline-2">
-<h2 id="org7ad4df9">Поче&shy;му это удоб&shy;нее?</h2>
-<div class="outline-text-2" id="text-org7ad4df9">
+<div id="outline-container-org28b4078" class="outline-2">
+<h2 id="org28b4078">Поче&shy;му это удоб&shy;нее?</h2>
+<div class="outline-text-2" id="text-org28b4078">
 </div>
-<div id="outline-container-org1434344" class="outline-3">
-<h3 id="org1434344">Текс&shy;то&shy;вые фа&shy;йлы</h3>
-<div class="outline-text-3" id="text-org1434344">
+<div id="outline-container-orgcd5070f" class="outline-3">
+<h3 id="orgcd5070f">Текс&shy;то&shy;вые фа&shy;йлы</h3>
+<div class="outline-text-3" id="text-orgcd5070f">
 <ul class="org-ul">
 <li>Прак&shy;ти&shy;чес&shy;ки бес&shy;плат&shy;но по ис&shy;поль&shy;зо&shy;ва&shy;нию ре&shy;сур&shy;сов, я мо&shy;гу хос&shy;тить
 блог букваль&shy;но где угод&shy;но<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
@@ -111,9 +111,9 @@
 </div>
 </div>
 
-<div id="outline-container-org6a08fbd" class="outline-3">
-<h3 id="org6a08fbd">Сила org-mode</h3>
-<div class="outline-text-3" id="text-org6a08fbd">
+<div id="outline-container-org00ca108" class="outline-3">
+<h3 id="org00ca108">Сила org-mode</h3>
+<div class="outline-text-3" id="text-org00ca108">
 <ul class="org-ul">
 <li>Я мо&shy;гу за се&shy;кун&shy;ду пря&shy;мо из ре&shy;дак&shy;то&shy;ра вста&shy;вить скриншот<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup></li>
 </ul>
@@ -138,7 +138,7 @@ Bob --&gt; Alice: Authentication Response
 </div>
 
 
-<div id="org569335e" class="figure">
+<div id="org13e04cf" class="figure">
 <p><img src="/assets/blog/2017/09/30/initial-commit/plantuml-example.png" alt="plantuml-example.png" />
 </p>
 <p><span class="figure-number">&#1056;&#1080;&#1089;. 2.: </span>При&shy;мер диа&shy;грам&shy;мы UML</p>
@@ -149,7 +149,7 @@ Bob --&gt; Alice: Authentication Response
 </ul>
 
 <div class="org-src-container">
-<pre><code class="src src-dot" id="org8db6292">graph example { 
+<pre><code class="src src-dot" id="org9788d07">graph example { 
         a -- b;
         b -- c;
         b -- d;
@@ -158,7 +158,7 @@ Bob --&gt; Alice: Authentication Response
 </code></pre>
 </div>
 
-<div id="orgcd8bb29" class="figure">
+<div id="orgb1dc139" class="figure">
 <p><img src="/assets/blog/2017/09/30/initial-commit/graphviz-example.png" alt="graphviz-example.png" />
 </p>
 <p><span class="figure-number">&#1056;&#1080;&#1089;. 3.: </span>При&shy;мер гра&shy;фа Graphviz</p>
@@ -214,7 +214,7 @@ Bob --&gt; Alice: Authentication Response
 </div>
 
 <ul class="org-ul">
-<li>Из ре&shy;дак&shy;то&shy;ра воз&shy;мож&shy;но за&shy;пус&shy;кать не толь&shy;ко ку&shy;соч&shy;ки ко&shy;да, но и на&shy;при&shy;мер вы&shy;зы&shy;вать <a href="urxvt -e ssh root@microsoft.com">внеш&shy;ние ко&shy;ман&shy;ды</a><sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup> (чи&shy;та&shy;те&shy;лям из бра&shy;узе&shy;ра так не по&shy;лу&shy;чит&shy;ся). И ко&shy;неч&shy;но же ссы&shy;лать&shy;ся <a href="#org1434344">внут&shy;ри до&shy;ку&shy;мен&shy;та</a>.</li>
+<li>Из ре&shy;дак&shy;то&shy;ра воз&shy;мож&shy;но за&shy;пус&shy;кать не толь&shy;ко ку&shy;соч&shy;ки ко&shy;да, но и на&shy;при&shy;мер вы&shy;зы&shy;вать <a href="urxvt -e ssh root@microsoft.com">внеш&shy;ние ко&shy;ман&shy;ды</a><sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup> (чи&shy;та&shy;те&shy;лям из бра&shy;узе&shy;ра так не по&shy;лу&shy;чит&shy;ся). И ко&shy;неч&shy;но же ссы&shy;лать&shy;ся <a href="#orgcd5070f">внут&shy;ри до&shy;ку&shy;мен&shy;та</a>.</li>
 
 <li>Или на&shy;при&shy;мер встав&shy;лять вид&shy;ео с YouTube<sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup>:</li>
 </ul>
@@ -225,9 +225,9 @@ Bob --&gt; Alice: Authentication Response
 </div>
 </div>
 
-<div id="outline-container-org404628b" class="outline-3">
-<h3 id="org404628b">Совмес&shy;ти&shy;мость</h3>
-<div class="outline-text-3" id="text-org404628b">
+<div id="outline-container-org5170c9c" class="outline-3">
+<h3 id="org5170c9c">Совмес&shy;ти&shy;мость</h3>
+<div class="outline-text-3" id="text-org5170c9c">
 <p>
 Дав&shy;но пи&shy;шу в org-mode свою жизнь. Это и до&shy;ку&shy;мен&shy;та&shy;ция по ра&shy;бо&shy;те, и ка&shy;кие-то лич&shy;ные де&shy;ла, и спис&shy;ки TODO (жаль нет нор&shy;маль&shy;но&shy;го ре&shy;ше&shy;ния для мо&shy;биль&shy;ных уст&shy;ро&shy;йств). Поэ&shy;то&shy;му для ме&shy;ня это чуть
 ли не иде&shy;аль&shy;ный ва&shy;ри&shy;ант для ор&shy;га&shy;ни&shy;за&shy;ции бло&shy;га: еди&shy;ный фор&shy;мат.
@@ -236,9 +236,9 @@ Bob --&gt; Alice: Authentication Response
 </div>
 </div>
 
-<div id="outline-container-org959ba6d" class="outline-2">
-<h2 id="org959ba6d">Ито&shy;го</h2>
-<div class="outline-text-2" id="text-org959ba6d">
+<div id="outline-container-orga75635f" class="outline-2">
+<h2 id="orga75635f">Ито&shy;го</h2>
+<div class="outline-text-2" id="text-orga75635f">
 <p>
 Коро&shy;че го&shy;во&shy;ря, то, че&shy;го услов&shy;ный Wordpress вот-вот (ещё
 чуть-чуть!) час&shy;тич&shy;но добьет&shy;ся де&shy;сят&shy;ка&shy;ми ме&shy;га&shy;байт PHP-ко&shy;да и мил&shy;ли&shy;она&shy;ми
@@ -253,20 +253,20 @@ Bob --&gt; Alice: Authentication Response
 </div>
 </div>
 
-<div id="outline-container-org3012d55" class="outline-2">
-<h2 id="org3012d55">Что до&shy;де&shy;лать</h2>
-<div class="outline-text-2" id="text-org3012d55">
+<div id="outline-container-org825260e" class="outline-2">
+<h2 id="org825260e">Что до&shy;де&shy;лать</h2>
+<div class="outline-text-2" id="text-org825260e">
 <p>
 Мне бли&shy;зок дух перфек&shy;ци&shy;онис&shy;та, по&shy;это&shy;му хо&shy;те&shy;лось бы до&shy;пи&shy;лить:
 </p>
 </div>
 
-<div id="outline-container-org8392b43" class="outline-3">
-<h3 id="org8392b43"><span class="todo TODO">TODO</span> Воз&shy;мож&shy;ность быст&shy;ро по&shy;стить ко&shy;ти&shy;ков</h3>
+<div id="outline-container-org0192016" class="outline-3">
+<h3 id="org0192016"><span class="todo TODO">TODO</span> Воз&shy;мож&shy;ность быст&shy;ро по&shy;стить ко&shy;ти&shy;ков</h3>
 </div>
-<div id="outline-container-org993d151" class="outline-3">
-<h3 id="org993d151"><span class="todo TODO">TODO</span> Вме&shy;ня&shy;емые макро&shy;сы</h3>
-<div class="outline-text-3" id="text-org993d151">
+<div id="outline-container-org6aca1c0" class="outline-3">
+<h3 id="org6aca1c0"><span class="todo TODO">TODO</span> Вме&shy;ня&shy;емые макро&shy;сы</h3>
+<div class="outline-text-3" id="text-org6aca1c0">
 <p>
 Для ме&shy;ня по&shy;ка за&shy;гад&shy;ка, по&shy;че&shy;му в org-mode пред&shy;по&shy;чли собст&shy;вен&shy;ный фор&shy;мат
 макро&shy;сов, ко&shy;гда есть за&shy;ме&shy;ча&shy;тель&shy;ные макро&shy;сы \(\LaTeX\) (ко&shy;то&shy;рые час&shy;тич&shy;но
@@ -275,9 +275,9 @@ Bob --&gt; Alice: Authentication Response
 </div>
 </div>
 
-<div id="outline-container-org86ac5b2" class="outline-3">
-<h3 id="org86ac5b2"><span class="done DONE">DONE</span> Пере&shy;но&shy;сы слов</h3>
-<div class="outline-text-3" id="text-org86ac5b2">
+<div id="outline-container-org89f75b9" class="outline-3">
+<h3 id="org89f75b9"><span class="done DONE">DONE</span> Пере&shy;но&shy;сы слов</h3>
+<div class="outline-text-3" id="text-org89f75b9">
 </div>
 </div>
 </div>
@@ -319,7 +319,7 @@ Bob --&gt; Alice: Authentication Response
 Агре&shy;ги&shy;ро&shy;вал дан&shy;ные по НС со смер&shy;тель&shy;ным ис&shy;хо&shy;дом на Побе&shy;де.
 </p>
 
-<table id="org95ebf7d" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="org30bc423" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1.:</span> Нес&shy;част&shy;ные слу&shy;чаи на п.Побе&shy;да</caption>
 
 <colgroup>
