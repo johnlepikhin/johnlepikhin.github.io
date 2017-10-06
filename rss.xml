@@ -4,8 +4,8 @@
     <title>The great nothingness</title>
     <link>https://johnlepikhin.github.io</link>
     <description>.</description>
-    <pubDate>Sat, 07 Oct 2017 00:15:59 MSK</pubDate>
-    <lastBuildDate>Sat, 07 Oct 2017 00:15:59 MSK</lastBuildDate>
+    <pubDate>Sat, 07 Oct 2017 00:17:24 MSK</pubDate>
+    <lastBuildDate>Sat, 07 Oct 2017 00:17:24 MSK</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -47,11 +47,7 @@
 <p>
 И вот од&shy;наж&shy;ды при&shy;шла в го&shy;ло&shy;ву мысль на&shy;пи&shy;сать ана&shy;ло&shy;гич&shy;ный ана&shy;ли&shy;за&shy;тор
 для MySQL. Реше&shy;ние по&shy;лу&shy;чи&shy;лось не&shy;ожи&shy;дан&shy;но удач&shy;ным и да&shy;же при&shy;обре&shy;ло
-не&shy;ко&shy;то&shy;рый ком&shy;мер&shy;чес&shy;кий успех. Мне не жал&shy;ко, по&shy;это&shy;му де&shy;люсь:
-</p>
-
-<p>
-<a href="https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_query_stats">https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_query_stats</a>
+не&shy;ко&shy;то&shy;рый ком&shy;мер&shy;чес&shy;кий успех. Мне не жал&shy;ко, по&shy;это&shy;му де&shy;люсь: <a href="https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_query_stats">mysql_query_stats</a>.
 </p>
 
 <p>
@@ -61,11 +57,7 @@
 
 <p>
 Рядом ле&shy;жит вспо&shy;мо&shy;га&shy;тель&shy;ный скрипт, ко&shy;то&shy;рый ищ&shy;ет по&shy;хо&shy;жие за&shy;про&shy;сы по
-ша&shy;бло&shy;ну:
-</p>
-
-<p>
-<a href="https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_similar_queries">https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_similar_queries</a>
+ша&shy;бло&shy;ну: <a href="https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_similar_queries">mysql_similar_queries</a>
 </p>
 
 <p>
