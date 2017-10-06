@@ -4,8 +4,8 @@
     <title>The great nothingness</title>
     <link>https://johnlepikhin.github.io</link>
     <description>.</description>
-    <pubDate>Sat, 07 Oct 2017 02:26:22 MSK</pubDate>
-    <lastBuildDate>Sat, 07 Oct 2017 02:26:22 MSK</lastBuildDate>
+    <pubDate>Sat, 07 Oct 2017 02:47:48 MSK</pubDate>
+    <lastBuildDate>Sat, 07 Oct 2017 02:47:48 MSK</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -18,159 +18,7 @@
     <item>
       <title>Статистика несчастных случаев на Победе</title>
       <link>https://johnlepikhin.github.io/blog/2016/03/12/статистика-несчастных-случаев-на-победе/</link>
-      <description><![CDATA[<div>
-<div class="post">
-<h1>Статистика несчастных случаев на Победе</h1>
-<p>
-Агре&shy;ги&shy;ро&shy;вал дан&shy;ные по НС со смер&shy;тель&shy;ным ис&shy;хо&shy;дом на Побе&shy;де.
-</p>
-
-<table id="org4e34b0b" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption class="t-above"><span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1.:</span> Нес&shy;част&shy;ные слу&shy;чаи на п.Побе&shy;да</caption>
-
-<colgroup>
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-right">вы&shy;со&shy;та</th>
-<th scope="col" class="org-right">ко&shy;ли&shy;чест&shy;во</th>
-<th scope="col" class="org-left">при&shy;чи&shy;на</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-right">5200</td>
-<td class="org-right">1</td>
-<td class="org-left">ла&shy;ви&shy;на</td>
-</tr>
-
-<tr>
-<td class="org-right">6200</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-
-<tr>
-<td class="org-right">6300</td>
-<td class="org-right">1</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-
-<tr>
-<td class="org-right">6300</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-
-<tr>
-<td class="org-right">6400</td>
-<td class="org-right">1</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-
-<tr>
-<td class="org-right">6400</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-
-<tr>
-<td class="org-right">6500</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-
-<tr>
-<td class="org-right">6500</td>
-<td class="org-right">2</td>
-<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
-</tr>
-
-<tr>
-<td class="org-right">6600</td>
-<td class="org-right">2</td>
-<td class="org-left">срыв</td>
-</tr>
-
-<tr>
-<td class="org-right">6700</td>
-<td class="org-right">1</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-
-<tr>
-<td class="org-right">6700</td>
-<td class="org-right">2</td>
-<td class="org-left">срыв</td>
-</tr>
-
-<tr>
-<td class="org-right">6800</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-
-<tr>
-<td class="org-right">6900</td>
-<td class="org-right">1</td>
-<td class="org-left">ла&shy;ви&shy;на</td>
-</tr>
-
-<tr>
-<td class="org-right">6900</td>
-<td class="org-right">1</td>
-<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
-</tr>
-
-<tr>
-<td class="org-right">7000</td>
-<td class="org-right">3</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-
-<tr>
-<td class="org-right">7100</td>
-<td class="org-right">2</td>
-<td class="org-left">срыв</td>
-</tr>
-
-<tr>
-<td class="org-right">7200</td>
-<td class="org-right">1</td>
-<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
-</tr>
-
-<tr>
-<td class="org-right">7300</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-(груп&shy;по&shy;вая смерть счи&shy;та&shy;ет&shy;ся за один эпи&shy;зод, по фак&shy;ту циф&shy;ры ко&shy;неч&shy;но серь&shy;ез&shy;нее)
-</p>
-
-<div id="outline-container-org7fd05c1" class="outline-2">
-<h2 id="org7fd05c1">Для на&shy;гляд&shy;нос&shy;ти кар&shy;тин&shy;ка</h2>
-<div class="outline-text-2" id="text-org7fd05c1">
-
-<div class="figure">
-<p><object type="image/svg+xml" data="/assets/blog/2016/03/12/статистика-несчастных-случаев-на-победе/altitudes.svg" class="org-svg">
-<img src="/assets/blog/2016/03/12/статистика-несчастных-случаев-на-победе/altitudes.svg" class="org-svg" /></object>
-</p>
-</div>
-</div>
-</div>
-
-</div>
-</div>]]></description>
+      <description><![CDATA[]]></description>
       <pubDate>2017-10-07</pubDate>
       <guid>https://johnlepikhin.github.io/blog/2016/03/12/статистика-несчастных-случаев-на-победе/</guid>
     </item>
@@ -205,7 +53,7 @@
     <item>
       <title>How-to по SELinux, базовые принципы</title>
       <link>https://johnlepikhin.github.io/blog/2017/10/03/how-to-по-selinux-базовые-принципы/</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[Основы SELinux и работы с ним]]></description>
       <pubDate>2017-10-07</pubDate>
       <guid>https://johnlepikhin.github.io/blog/2017/10/03/how-to-по-selinux-базовые-принципы/</guid>
     </item>
