@@ -223,6 +223,12 @@ table th.right, table td.right {
     margin-right: 10%;
     width: 80px;
     background-color: #fff;
+    filter: grayscale(70%);
+    transition: .2s ease-in-out;
+}
+.masthead img.avatar:hover {
+    filter: grayscale(0%);
+    transition: .2s ease-in-out;
 }
 /* post */
 .post {
@@ -235,6 +241,21 @@ table th.right, table td.right {
 }
 .post img {
     max-width: 100%;
+    filter: grayscale(100%);
+    transition: .2s ease-in-out;
+}
+.post img:hover {
+    filter: grayscale(0%);
+    transition: .2s ease-in-out;
+}
+.post iframe {
+    filter: grayscale(100%);
+    transition: .2s ease-in-out;
+    border-radius: 3px 3px 3px 3px;
+}
+.post iframe:hover {
+    filter: grayscale(0%);
+    transition: .2s ease-in-out;
 }
 .post li {
     /* list-style: none outside none; */
