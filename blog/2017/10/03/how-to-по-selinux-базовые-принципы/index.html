@@ -20,7 +20,6 @@
           <li><a href="/tech/">Tech</a></li>
           <li><a href="/tags/">Тэги</a></li>
           <li><a href="/about/">О блоге</a></li>
-          <li><a href="https://github.com/johnlepikhin">GitHub</a></li>
           <li><a href="/rss.xml">RSS</a></li>
         </ul>
         <form method="get" id="searchform" action="//www.google.com/search">
@@ -39,13 +38,13 @@
 до&shy;ку&shy;мен&shy;та&shy;цию. Решил по&shy;де&shy;лить&shy;ся.
 </p>
 
-<div id="outline-container-org3db078d" class="outline-2">
-<h2 id="org3db078d">Подго&shy;то&shy;вка</h2>
-<div class="outline-text-2" id="text-org3db078d">
+<div id="outline-container-org9fb6703" class="outline-2">
+<h2 id="org9fb6703">Подго&shy;то&shy;вка</h2>
+<div class="outline-text-2" id="text-org9fb6703">
 </div>
-<div id="outline-container-org6a9131a" class="outline-3">
-<h3 id="org6a9131a">Поста&shy;вить па&shy;ке&shy;ты (CentOS)</h3>
-<div class="outline-text-3" id="text-org6a9131a">
+<div id="outline-container-org7242cc2" class="outline-3">
+<h3 id="org7242cc2">Поста&shy;вить па&shy;ке&shy;ты (CentOS)</h3>
+<div class="outline-text-3" id="text-org7242cc2">
 <div class="org-src-container">
 <pre><code class="src src-sh">yum install setools-console policycoreutils-python
 </code></pre>
@@ -54,15 +53,15 @@
 </div>
 </div>
 
-<div id="outline-container-org720ea99" class="outline-2">
-<h2 id="org720ea99">Конц&shy;епт</h2>
-<div class="outline-text-2" id="text-org720ea99">
+<div id="outline-container-orgc401f33" class="outline-2">
+<h2 id="orgc401f33">Конц&shy;епт</h2>
+<div class="outline-text-2" id="text-orgc401f33">
 </div>
-<div id="outline-container-orgc9cab67" class="outline-3">
-<h3 id="orgc9cab67">Поли&shy;ти&shy;ки</h3>
-<div class="outline-text-3" id="text-orgc9cab67">
+<div id="outline-container-org88edbad" class="outline-3">
+<h3 id="org88edbad">Поли&shy;ти&shy;ки</h3>
+<div class="outline-text-3" id="text-org88edbad">
 <p>
-Для вс&shy;ей си&shy;сте&shy;мы за&shy;да&shy;ет&shy;ся <a id="org00d090e"></a>policy, ко&shy;то&shy;рая бу&shy;дет при&shy;ме&shy;не&shy;на ко всем
+Для вс&shy;ей си&shy;сте&shy;мы за&shy;да&shy;ет&shy;ся <a id="org024b3c9"></a>policy, ко&shy;то&shy;рая бу&shy;дет при&shy;ме&shy;не&shy;на ко всем
 об&shy;ъек&shy;там. По умо&shy;лча&shy;нию дейст&shy;ву&shy;ет по&shy;ли&shy;ти&shy;ка targeted. Поли&shy;ти&shy;ка за&shy;да&shy;ет&shy;ся
 в фа&shy;йле <code>/etc/sysconfig/selinux</code>
 </p>
@@ -84,14 +83,14 @@
 </div>
 </div>
 
-<div id="outline-container-org10c1248" class="outline-3">
-<h3 id="org10c1248">Режи&shy;мы SELinux</h3>
-<div class="outline-text-3" id="text-org10c1248">
+<div id="outline-container-org8c64059" class="outline-3">
+<h3 id="org8c64059">Режи&shy;мы SELinux</h3>
+<div class="outline-text-3" id="text-org8c64059">
 <ul class="org-ul">
 <li>disabled: SELinux вы&shy;клю&shy;чен</li>
-<li><a id="orgf13119f"></a> <code>enforcing</code>: вклю&shy;чен, пра&shy;ви&shy;ла бло&shy;ки&shy;ру&shy;ют, со&shy;об&shy;ще&shy;ния о бло&shy;ки&shy;ров&shy;ке
+<li><a id="org2aceaf7"></a> <code>enforcing</code>: вклю&shy;чен, пра&shy;ви&shy;ла бло&shy;ки&shy;ру&shy;ют, со&shy;об&shy;ще&shy;ния о бло&shy;ки&shy;ров&shy;ке
 ухо&shy;дят в <code>/var/log/audit/audit.log</code></li>
-<li><a id="org5e65103"></a> <code>permissive</code>: ни&shy;че&shy;го не бло&shy;ки&shy;ру&shy;ет&shy;ся, толь&shy;ко ухо&shy;дят со&shy;об&shy;ще&shy;ния в
+<li><a id="orgc21c18c"></a> <code>permissive</code>: ни&shy;че&shy;го не бло&shy;ки&shy;ру&shy;ет&shy;ся, толь&shy;ко ухо&shy;дят со&shy;об&shy;ще&shy;ния в
 <code>/var/log/audit/audit.log</code></li>
 </ul>
 
@@ -115,11 +114,11 @@
 </div>
 </div>
 
-<div id="outline-container-org925b303" class="outline-3">
-<h3 id="org925b303">Кон&shy;тек&shy;сты</h3>
-<div class="outline-text-3" id="text-org925b303">
+<div id="outline-container-org99ab604" class="outline-3">
+<h3 id="org99ab604">Кон&shy;тек&shy;сты</h3>
+<div class="outline-text-3" id="text-org99ab604">
 <p>
-Каж&shy;дый об&shy;ъект ми&shy;ра (файл, про&shy;цесс и т.д.) име&shy;ют свойст&shy;во <a id="orgbbfa80a"></a>context. В
+Каж&shy;дый об&shy;ъект ми&shy;ра (файл, про&shy;цесс и т.д.) име&shy;ют свойст&shy;во <a id="org79697f8"></a>context. В
 SELinux со&shy;вер&shy;шен&shy;но не важ&shy;но кто и ку&shy;да сде&shy;лал su, fork и т.д. —
 кон&shy;текст на&shy;следу&shy;ет&shy;ся до тех пор, по&shy;ка яв&shy;но в пра&shy;ви&shy;лах SELinux не
 ска&shy;за&shy;но, что на&shy;до сме&shy;нить кон&shy;текст
@@ -129,9 +128,9 @@ SELinux со&shy;вер&shy;шен&shy;но не важ&shy;но кто и ку&
 Каж&shy;дый кон&shy;текст со&shy;сто&shy;ит из трех час&shy;тей:
 </p>
 <ol class="org-ol">
-<li><a id="orgb4dbbfd"></a> <code>user</code></li>
-<li><a id="org52a0e92"></a> <code>role</code></li>
-<li><a id="orgcbc9753"></a> <code>type</code> (у про&shy;цес&shy;сов его при&shy;ня&shy;то на&shy;зы&shy;вать <a id="orge8097cd"></a>domain, но раз&shy;ни&shy;цы ни&shy;ка&shy;кой нет)</li>
+<li><a id="orgf2393f7"></a> <code>user</code></li>
+<li><a id="org68ccb1a"></a> <code>role</code></li>
+<li><a id="orga7ea043"></a> <code>type</code> (у про&shy;цес&shy;сов его при&shy;ня&shy;то на&shy;зы&shy;вать <a id="orgbe70c07"></a>domain, но раз&shy;ни&shy;цы ни&shy;ка&shy;кой нет)</li>
 </ol>
 
 <p>
@@ -179,9 +178,9 @@ unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 </div>
 </div>
 
-<div id="outline-container-org4fed244" class="outline-3">
-<h3 id="org4fed244">Аудит</h3>
-<div class="outline-text-3" id="text-org4fed244">
+<div id="outline-container-orge207247" class="outline-3">
+<h3 id="orge207247">Аудит</h3>
+<div class="outline-text-3" id="text-orge207247">
 <p>
 В ре&shy;жи&shy;мах enforcing и permissive си&shy;сте&shy;ма пи&shy;шет в лог
 <code>/var/log/audit/audit.log</code> обо всех со&shy;бы&shy;ти&shy;ях безопа&shy;снос&shy;ти. Этот лог
@@ -195,18 +194,18 @@ unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 </div>
 </div>
 
-<div id="outline-container-org4f231de" class="outline-2">
-<h2 id="org4f231de">Соз&shy;да&shy;ние но&shy;вых пра&shy;вил</h2>
-<div class="outline-text-2" id="text-org4f231de">
+<div id="outline-container-orgfe46366" class="outline-2">
+<h2 id="orgfe46366">Соз&shy;да&shy;ние но&shy;вых пра&shy;вил</h2>
+<div class="outline-text-2" id="text-orgfe46366">
 <p>
 Лучше все&shy;го это де&shy;лать че&shy;рез на&shy;пи&shy;са&shy;ние мо&shy;ду&shy;ля. Модуль SELinux мож&shy;но
 под&shy;гр&shy;ужать, вы&shy;гру&shy;жать, рас&shy;прост&shy;ра&shy;нять. Удоб&shy;но.
 </p>
 </div>
 
-<div id="outline-container-org4a2484d" class="outline-3">
-<h3 id="org4a2484d">Общий план</h3>
-<div class="outline-text-3" id="text-org4a2484d">
+<div id="outline-container-org54c312d" class="outline-3">
+<h3 id="org54c312d">Общий план</h3>
+<div class="outline-text-3" id="text-org54c312d">
 <ul class="org-ul">
 <li>Соз&shy;дать но&shy;вый type для за&shy;пус&shy;ка&shy;емо&shy;го фа&shy;йла</li>
 <li>Соз&shy;дать но&shy;вый type, ко&shy;то&shy;рый бу&shy;дет domain ра&shy;бо&shy;та&shy;юще&shy;го при&shy;ло&shy;же&shy;ния</li>
@@ -218,13 +217,13 @@ unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 </div>
 </div>
 
-<div id="outline-container-org37aa49d" class="outline-3">
-<h3 id="org37aa49d">Соз&shy;да&shy;ние мо&shy;ду&shy;ля</h3>
-<div class="outline-text-3" id="text-org37aa49d">
+<div id="outline-container-orgfacf251" class="outline-3">
+<h3 id="orgfacf251">Соз&shy;да&shy;ние мо&shy;ду&shy;ля</h3>
+<div class="outline-text-3" id="text-orgfacf251">
 </div>
-<div id="outline-container-orgc88b6be" class="outline-4">
-<h4 id="orgc88b6be">Подго&shy;то&shy;вка</h4>
-<div class="outline-text-4" id="text-orgc88b6be">
+<div id="outline-container-org7f83a24" class="outline-4">
+<h4 id="org7f83a24">Подго&shy;то&shy;вка</h4>
+<div class="outline-text-4" id="text-org7f83a24">
 <div class="org-src-container">
 <pre><code class="src src-sh">mkdir /root/selinux_my_module
 <span style="color: #483d8b;">cd</span> /root/selinux_my_module
@@ -235,9 +234,9 @@ vim my_module.te
 </div>
 </div>
 
-<div id="outline-container-org30d6449" class="outline-4">
-<h4 id="org30d6449">Соз&shy;да&shy;ние ми&shy;ни&shy;маль&shy;но&shy;го мо&shy;ду&shy;ля</h4>
-<div class="outline-text-4" id="text-org30d6449">
+<div id="outline-container-orga444311" class="outline-4">
+<h4 id="orga444311">Соз&shy;да&shy;ние ми&shy;ни&shy;маль&shy;но&shy;го мо&shy;ду&shy;ля</h4>
+<div class="outline-text-4" id="text-orga444311">
 <pre class="example">
 module my_module 1.0;
 
@@ -257,9 +256,9 @@ type_transition unconfined_t mytype_exec_t : process mytype_t;
 </div>
 </div>
 
-<div id="outline-container-org7baffa1" class="outline-4">
-<h4 id="org7baffa1">Сбор&shy;ка и за&shy;груз&shy;ка</h4>
-<div class="outline-text-4" id="text-org7baffa1">
+<div id="outline-container-org87d5694" class="outline-4">
+<h4 id="org87d5694">Сбор&shy;ка и за&shy;груз&shy;ка</h4>
+<div class="outline-text-4" id="text-org87d5694">
 <div class="org-src-container">
 <pre><code class="src src-sh">make &amp;&amp; make load
 </code></pre>
@@ -276,9 +275,9 @@ type_transition unconfined_t mytype_exec_t : process mytype_t;
 </div>
 </div>
 
-<div id="outline-container-org967d077" class="outline-4">
-<h4 id="org967d077">Про&shy;вер&shy;ка</h4>
-<div class="outline-text-4" id="text-org967d077">
+<div id="outline-container-org5a8b271" class="outline-4">
+<h4 id="org5a8b271">Про&shy;вер&shy;ка</h4>
+<div class="outline-text-4" id="text-org5a8b271">
 <div class="org-src-container">
 <pre><code class="src src-sh">cp /bin/date /root/test
 chcon -t mytype_exec_t /root/test
@@ -294,11 +293,11 @@ setenforce 1
 </div>
 </div>
 
-<div id="outline-container-org8138cd2" class="outline-4">
-<h4 id="org8138cd2">Добав&shy;ле&shy;ние пра&shy;вил с по&shy;мощью <a id="org00e4fa7"></a>audit2allow</h4>
-<div class="outline-text-4" id="text-org8138cd2">
+<div id="outline-container-orgd4a8fb5" class="outline-4">
+<h4 id="orgd4a8fb5">Добав&shy;ле&shy;ние пра&shy;вил с по&shy;мощью <a id="orgff7a651"></a>audit2allow</h4>
+<div class="outline-text-4" id="text-orgd4a8fb5">
 <p>
-Ути&shy;ли&shy;та пред&shy;на&shy;зна&shy;че&shy;на для ге&shy;не&shy;ра&shy;ции пра&shy;вил на ос&shy;но&shy;ве ло&shy;га <a href="#org4fed244">ау&shy;ди&shy;та</a>.
+Ути&shy;ли&shy;та пред&shy;на&shy;зна&shy;че&shy;на для ге&shy;не&shy;ра&shy;ции пра&shy;вил на ос&shy;но&shy;ве ло&shy;га <a href="#orge207247">ау&shy;ди&shy;та</a>.
 </p>
 
 <div class="org-src-container">
@@ -307,19 +306,19 @@ setenforce 1
 </div>
 
 <p>
-Теперь мож&shy;но по&shy;пра&shy;вить мо&shy;дуль, за&shy;тем за&shy;но&shy;во его <a href="#org7baffa1">за&shy;гру&shy;зить</a>.
+Теперь мож&shy;но по&shy;пра&shy;вить мо&shy;дуль, за&shy;тем за&shy;но&shy;во его <a href="#org87d5694">за&shy;гру&shy;зить</a>.
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgb64a957" class="outline-3">
-<h3 id="orgb64a957">Полез&shy;ные пра&shy;ви&shy;ла</h3>
-<div class="outline-text-3" id="text-orgb64a957">
+<div id="outline-container-orgf7845cb" class="outline-3">
+<h3 id="orgf7845cb">Полез&shy;ные пра&shy;ви&shy;ла</h3>
+<div class="outline-text-3" id="text-orgf7845cb">
 </div>
-<div id="outline-container-org3a744d0" class="outline-4">
-<h4 id="org3a744d0">Воз&shy;мож&shy;ность ме&shy;нять type об&shy;рат&shy;но</h4>
-<div class="outline-text-4" id="text-org3a744d0">
+<div id="outline-container-org004420d" class="outline-4">
+<h4 id="org004420d">Воз&shy;мож&shy;ность ме&shy;нять type об&shy;рат&shy;но</h4>
+<div class="outline-text-4" id="text-org004420d">
 <p>
 По умо&shy;лча&shy;ни
 </p>
@@ -336,9 +335,9 @@ allow unconfined_t mytype_exec_t:file { ... relabelfrom ... }
 </div>
 </div>
 
-<div id="outline-container-orgd323e1c" class="outline-4">
-<h4 id="orgd323e1c">Базо&shy;вые пра&shy;ви&shy;ла для за&shy;пус&shy;ка фа&shy;йла</h4>
-<div class="outline-text-4" id="text-orgd323e1c">
+<div id="outline-container-org00955c1" class="outline-4">
+<h4 id="org00955c1">Базо&shy;вые пра&shy;ви&shy;ла для за&shy;пус&shy;ка фа&shy;йла</h4>
+<div class="outline-text-4" id="text-org00955c1">
 <pre class="example">
 # доступ к /
 allow mytype_t root_t:dir search;
@@ -358,9 +357,9 @@ allow mytype_exec_t fs_t:filesystem associate;
 </div>
 </div>
 
-<div id="outline-container-org0a5ec5f" class="outline-3">
-<h3 id="org0a5ec5f">При&shy;мер го&shy;то&shy;во&shy;го мо&shy;ду&shy;ля</h3>
-<div class="outline-text-3" id="text-org0a5ec5f">
+<div id="outline-container-org6d7e43e" class="outline-3">
+<h3 id="org6d7e43e">При&shy;мер го&shy;то&shy;во&shy;го мо&shy;ду&shy;ля</h3>
+<div class="outline-text-3" id="text-org6d7e43e">
 <p>
 Разре&shy;шить би&shy;нар&shy;ни&shy;ку с type mytype_t до&shy;ступ толь&shy;ко к /tmp
 </p>
@@ -481,12 +480,12 @@ chcon -t mytype_t /tmp/a.out
 </div>
 </div>
 
-<div id="outline-container-org6322631" class="outline-3">
-<h3 id="org6322631">Пра&shy;ви&shy;ло для policy "minimum"</h3>
-<div class="outline-text-3" id="text-org6322631">
+<div id="outline-container-org9c85c01" class="outline-3">
+<h3 id="org9c85c01">Пра&shy;ви&shy;ло для policy "minimum"</h3>
+<div class="outline-text-3" id="text-org9c85c01">
 <p>
 Если уста&shy;нов&shy;лен minimum, то не&shy;об&shy;хо&shy;ди&shy;мо всем поль&shy;зо&shy;ва&shy;те&shy;лям ро&shy;ли
-unconfined_r (а это в по&shy;ли&shy;ти&shy;ке minumum все поль&shy;зо&shy;ва&shy;те&shy;ли) до&shy;ступ к <a href="#orgcbc9753">ти&shy;пу</a> mytype_t.
+unconfined_r (а это в по&shy;ли&shy;ти&shy;ке minumum все поль&shy;зо&shy;ва&shy;те&shy;ли) до&shy;ступ к <a href="#orga7ea043">ти&shy;пу</a> mytype_t.
 </p>
 
 <pre class="example">
@@ -496,21 +495,21 @@ role unconfined_r types mytype_t;
 </div>
 </div>
 
-<div id="outline-container-org3cfee03" class="outline-2">
-<h2 id="org3cfee03">Огра&shy;ни&shy;че&shy;ние толь&shy;ко од&shy;но&shy;го би&shy;нар&shy;ни&shy;ка</h2>
-<div class="outline-text-2" id="text-org3cfee03">
+<div id="outline-container-orga45de74" class="outline-2">
+<h2 id="orga45de74">Огра&shy;ни&shy;че&shy;ние толь&shy;ко од&shy;но&shy;го би&shy;нар&shy;ни&shy;ка</h2>
+<div class="outline-text-2" id="text-orga45de74">
 <ol class="org-ol">
 <li>Поста&shy;вить па&shy;кет <code>selinux-policy-minimum</code> (CentOS)</li>
 <li>Про&shy;пи&shy;сать этот policy в <code>/etc/selinux/config</code></li>
 <li>reboot (мо&shy;жет быть дол&shy;гим ес&shy;ли на&shy;чнет&shy;ся relabeling)</li>
-<li>Соз&shy;дать <a href="#org30d6449">мо&shy;дуль</a>, не за&shy;быть про <a href="#org6322631">Пра&shy;ви&shy;ло для policy "minimum"</a></li>
+<li>Соз&shy;дать <a href="#orga444311">мо&shy;дуль</a>, не за&shy;быть про <a href="#org9c85c01">Пра&shy;ви&shy;ло для policy "minimum"</a></li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-orge361214" class="outline-2">
-<h2 id="orge361214">Полез&shy;ные ссыл&shy;ки</h2>
-<div class="outline-text-2" id="text-orge361214">
+<div id="outline-container-orge86dead" class="outline-2">
+<h2 id="orge86dead">Полез&shy;ные ссыл&shy;ки</h2>
+<div class="outline-text-2" id="text-orge86dead">
 <ul class="org-ul">
 <li><a href="http://fedoraproject.org/wiki/PackagingDrafts/SELinux#Creating_new_types">Creating new types</a></li>
 <li><a href="https://selinuxproject.org/page/ObjectClassesPerms">ObjectClassesPerms</a></li>
@@ -537,7 +536,7 @@ role unconfined_r types mytype_t;
       <script src="/media/js/main.js"></script>
       <div class="footer">
         <p>
-          Copyleft 2017 - ∞ <a href="mailto:e &lt;dot&gt; lepikhin &lt;at&gt; corp &lt;dot&gt; mail &lt;dot&gt; ru">Evgenii Lepikhin</a>
+          Copyleft 2017 - ∞ <a href="mailto:e &lt;dot&gt; lepikhin &lt;at&gt; corp &lt;dot&gt; mail &lt;dot&gt; ru">Evgenii Lepikhin</a> <a href="">GitHub</a>
         </p>
       </div>
     </div>
