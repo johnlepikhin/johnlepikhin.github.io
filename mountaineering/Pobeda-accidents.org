@@ -50,6 +50,5 @@ plot data using 1:2 title "count" smooth csplines
 #+end_src
 
 #+ATTR_HTML: :fallback /tmp/altitudes.svg
-#+ATTR_HTML: title="peak Pobeda deaths"
 #+RESULTS: plot
 [[file:/tmp/altitudes.svg]]
