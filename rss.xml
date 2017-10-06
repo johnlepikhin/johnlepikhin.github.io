@@ -4,8 +4,8 @@
     <title>The great nothingness</title>
     <link>https://johnlepikhin.github.io</link>
     <description>.</description>
-    <pubDate>Sat, 07 Oct 2017 01:51:54 MSK</pubDate>
-    <lastBuildDate>Sat, 07 Oct 2017 01:51:54 MSK</lastBuildDate>
+    <pubDate>Sat, 07 Oct 2017 01:56:46 MSK</pubDate>
+    <lastBuildDate>Sat, 07 Oct 2017 01:56:46 MSK</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -25,7 +25,7 @@
 Агре&shy;ги&shy;ро&shy;вал дан&shy;ные по НС со смер&shy;тель&shy;ным ис&shy;хо&shy;дом на Побе&shy;де.
 </p>
 
-<table id="orgbf1a69f" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="org02af6a9" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1.:</span> Нес&shy;част&shy;ные слу&shy;чаи на п.Побе&shy;да</caption>
 
 <colgroup>
@@ -69,26 +69,14 @@
 
 <tr>
 <td class="org-right">6400</td>
-<td class="org-right">1</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-
-<tr>
-<td class="org-right">6400</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-
-<tr>
-<td class="org-right">6500</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
+<td class="org-right">2</td>
+<td class="org-left">серд&shy;це, срыв</td>
 </tr>
 
 <tr>
 <td class="org-right">6500</td>
 <td class="org-right">2</td>
-<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
+<td class="org-left">срыв, пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
 </tr>
 
 <tr>
@@ -99,14 +87,8 @@
 
 <tr>
 <td class="org-right">6700</td>
-<td class="org-right">1</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-
-<tr>
-<td class="org-right">6700</td>
 <td class="org-right">2</td>
-<td class="org-left">срыв</td>
+<td class="org-left">серд&shy;це, срыв</td>
 </tr>
 
 <tr>
@@ -117,14 +99,8 @@
 
 <tr>
 <td class="org-right">6900</td>
-<td class="org-right">1</td>
-<td class="org-left">ла&shy;ви&shy;на</td>
-</tr>
-
-<tr>
-<td class="org-right">6900</td>
-<td class="org-right">1</td>
-<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
+<td class="org-right">2</td>
+<td class="org-left">ла&shy;ви&shy;на, пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
 </tr>
 
 <tr>
