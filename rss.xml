@@ -4,198 +4,229 @@
     <title>The great nothingness</title>
     <link>https://johnlepikhin.github.io</link>
     <description>.</description>
-    <pubDate>Fri, 06 Oct 2017 09:20:26 MSK</pubDate>
-    <lastBuildDate>Fri, 06 Oct 2017 09:20:26 MSK</lastBuildDate>
+    <pubDate>Fri, 06 Oct 2017 09:21:18 MSK</pubDate>
+    <lastBuildDate>Fri, 06 Oct 2017 09:21:18 MSK</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
       <title>Статистика несчастных случаев на Победе</title>
       <link>https://johnlepikhin.github.io/blog/2016/03/12/статистика-несчастных-случаев-на-победе/</link>
-      <description><![CDATA[<div>
-<div class="post">
-<h1>Статистика несчастных случаев на Победе</h1>
-<p>
-Агре&shy;ги&shy;ро&shy;вал дан&shy;ные по НС со смер&shy;тель&shy;ным ис&shy;хо&shy;дом на Побе&shy;де.
-</p>
-
-<table id="org85f2a1a" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption class="t-above"><span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1.:</span> Нес&shy;част&shy;ные слу&shy;чаи на п.Побе&shy;да</caption>
-
-<colgroup>
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-right">вы&shy;со&shy;та</th>
-<th scope="col" class="org-right">ко&shy;ли&shy;чест&shy;во слу&shy;ча&shy;ев</th>
-<th scope="col" class="org-left">при&shy;чи&shy;на</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-right">5200</td>
-<td class="org-right">1</td>
-<td class="org-left">ла&shy;ви&shy;на</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6200</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6300</td>
-<td class="org-right">1</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6300</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6400</td>
-<td class="org-right">1</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6400</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6500</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6500</td>
-<td class="org-right">2</td>
-<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6600</td>
-<td class="org-right">2</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6700</td>
-<td class="org-right">1</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6700</td>
-<td class="org-right">2</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6800</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6900</td>
-<td class="org-right">1</td>
-<td class="org-left">ла&shy;ви&shy;на</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">6900</td>
-<td class="org-right">1</td>
-<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">7000</td>
-<td class="org-right">3</td>
-<td class="org-left">серд&shy;це</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">7100</td>
-<td class="org-right">2</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">7200</td>
-<td class="org-right">1</td>
-<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-right">7300</td>
-<td class="org-right">1</td>
-<td class="org-left">срыв</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-(груп&shy;по&shy;вая смерть счи&shy;та&shy;ет&shy;ся за один эпи&shy;зод, по фак&shy;ту циф&shy;ры ко&shy;неч&shy;но серь&shy;ез&shy;нее)
-</p>
-
-<p>
-Таким об&shy;ра&shy;зом:
-</p>
-<ul class="org-ul">
-<li>на по&shy;ясе 6300-7100 со&shy;сре&shy;до&shy;то&shy;чить&shy;ся на стра&shy;хов&shy;ке</li>
-<li>на&shy;чи&shy;ная с 6500 на&shy;до край&shy;не вни&shy;ма&shy;тель&shy;но сле&shy;дить за при&shy;зна&shy;ка&shy;ми оте&shy;ка
-лег&shy;ких и мо&shy;зга. Ну и оче&shy;вид&shy;но не за&shy;си&shy;жи&shy;вать&shy;ся в пе&shy;ще&shy;рах, по
-воз&shy;мож&shy;нос&shy;ти.</li>
-</ul>
-
-<p>
-Для на&shy;гляд&shy;нос&shy;ти кар&shy;тин&shy;ка:
-</p>
-
-
-<div class="figure">
-<p><img src="/assets/blog/2016/03/12/статистика-несчастных-случаев-на-победе/altitudes.png" alt="altitudes.png" />
-</p>
-</div>
-
-</div>
-</div>]]></description>
+      <description><![CDATA[]]></description>
       <pubDate>2017-10-06</pubDate>
       <guid>https://johnlepikhin.github.io/blog/2016/03/12/статистика-несчастных-случаев-на-победе/</guid>
     </item>
     <item>
       <title>Initial commit</title>
       <link>https://johnlepikhin.github.io/blog/2017/09/30/initial-commit/</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[<div>
+<div class="post">
+<h1>Initial commit</h1>
+<p>
+Опять устал от ущерб&shy;нос&shy;ти си&shy;стем ве&shy;де&shy;ния жур&shy;на&shy;лов. Поэ&shy;то&shy;му пе&shy;ре&shy;ез&shy;жаю
+на бло&shy;ги из org-mode, сде&shy;лать это на&shy;вер&shy;ное сто&shy;ило ещё лет 10 на&shy;зад.
+</p>
+
+<div id="outline-container-org659374d" class="outline-2">
+<h2 id="org659374d">Поче&shy;му это удоб&shy;нее?</h2>
+<div class="outline-text-2" id="text-org659374d">
+</div>
+<div id="outline-container-orgdd1f5f6" class="outline-3">
+<h3 id="orgdd1f5f6">Текс&shy;то&shy;вые фа&shy;йлы</h3>
+<div class="outline-text-3" id="text-orgdd1f5f6">
+<ul class="org-ul">
+<li>Прак&shy;ти&shy;чес&shy;ки бес&shy;плат&shy;но по ис&shy;поль&shy;зо&shy;ва&shy;нию ре&shy;сур&shy;сов, я мо&shy;гу хос&shy;тить
+блог букваль&shy;но где угод&shy;но<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
+
+<li>Хочет&shy;ся по&shy;смот&shy;реть как вы&shy;гля&shy;дел блог пол&shy;то&shy;ра го&shy;да на&shy;зад? Отка&shy;ты&shy;ва&shy;ем&shy;ся до ком&shy;ми&shy;та в git, смот&shy;рим</li>
+
+<li>Могу ре&shy;дак&shy;ти&shy;ро&shy;вать чем угод&shy;но (глав&shy;ное по&shy;том со&shy;брать в Emacs), не
+бо&shy;юсь по&shy;те&shy;рять из&shy;ме&shy;не&shy;ния из-за слу&shy;чай&shy;но на&shy;жа&shy;то&shy;го Ctrl-R в бра&shy;узе&shy;ре.</li>
+
+<li>Могу ис&shy;кать по бло&shy;гу с по&shy;мощью grep, find и вс&shy;ей про&shy;чей си&shy;лы UNIX/Perl/…</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6922620" class="outline-3">
+<h3 id="org6922620">Сила org-mode</h3>
+<div class="outline-text-3" id="text-org6922620">
+<ul class="org-ul">
+<li>Я мо&shy;гу за се&shy;кун&shy;ду пря&shy;мо из ре&shy;дак&shy;то&shy;ра вста&shy;вить скриншот<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup></li>
+</ul>
+
+
+<div class="figure">
+<p><img src="/assets/blog/2017/09/30/initial-commit/screenshot-02.png" alt="screenshot-02.png" />
+</p>
+<p><span class="figure-number">&#1056;&#1080;&#1089;. 1.: </span>При&shy;мер скриншо&shy;та</p>
+</div>
+
+<ul class="org-ul">
+<li>Я мо&shy;гу пи&shy;сать ма&shy;те&shy;ма&shy;ти&shy;ку пря&shy;мо как в \(\LaTeX: \forall x \in X, \quad \exists y \leq \epsilon\)</li>
+
+<li>Я мо&shy;гу опи&shy;сы&shy;вать UML-диа&shy;грам&shy;мы в тек&shy;сте<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>:</li>
+</ul>
+
+
+<div id="org051c465" class="figure">
+<p><img src="/assets/blog/2017/09/30/initial-commit/plantuml-example.png" alt="plantuml-example.png" />
+</p>
+<p><span class="figure-number">&#1056;&#1080;&#1089;. 2.: </span>При&shy;мер диа&shy;грам&shy;мы UML</p>
+</div>
+
+<ul class="org-ul">
+<li>Я мо&shy;гу ри&shy;со&shy;вать dot-диа&shy;грам&shy;мы по мес&shy;ту<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>:</li>
+</ul>
+
+
+<div id="orga09a65c" class="figure">
+<p><img src="/assets/blog/2017/09/30/initial-commit/graphviz-example.png" alt="graphviz-example.png" />
+</p>
+<p><span class="figure-number">&#1056;&#1080;&#1089;. 3.: </span>При&shy;мер гра&shy;фа Graphviz</p>
+</div>
+
+<ul class="org-ul">
+<li>Я мо&shy;гу ри&shy;со&shy;вать таб&shy;лич&shy;ки без HTML-бо&shy;ли:</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1.:</span> Random-ге&shy;не&shy;ра&shy;тор от Пар&shy;тии</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Год</th>
+<th scope="col" class="org-right">1971</th>
+<th scope="col" class="org-right">1976</th>
+<th scope="col" class="org-right">1982</th>
+<th scope="col" class="org-right">1999</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Уро&shy;жай&shy;ность</td>
+<td class="org-right">554.1</td>
+<td class="org-right">331.4</td>
+<td class="org-right">876.5</td>
+<td class="org-right">994.0</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Ну и ра&shy;зу&shy;ме&shy;ет&shy;ся ис&shy;ход&shy;ни&shy;ки (кс&shy;та&shy;ти, я мо&shy;гу за&shy;пус&shy;кать их пря&shy;мо по мес&shy;ту на&shy;пи&shy;са&shy;ния<sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup>):</li>
+</ul>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1.: </span>При&shy;мер ко&shy;да на Perl</label><pre><code class="src src-perl"><span class="linenr">1: </span><span style="color: #a020f0;">my</span> <span style="color: #a0522d;">$a</span> = 2**8;
+<span class="linenr">2: </span>
+<span class="linenr">3: </span><span style="color: #66cd00;">print</span> <span style="color: #8b2252;">"$a\n"</span>;
+</code></pre>
+</div>
+
+<ul class="org-ul">
+<li>Из ре&shy;дак&shy;то&shy;ра воз&shy;мож&shy;но за&shy;пус&shy;кать не толь&shy;ко ку&shy;соч&shy;ки ко&shy;да, но и на&shy;при&shy;мер вы&shy;зы&shy;вать <a href="urxvt -e ssh root@microsoft.com">внеш&shy;ние ко&shy;ман&shy;ды</a><sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup> (чи&shy;та&shy;те&shy;лям из бра&shy;узе&shy;ра так не по&shy;лу&shy;чит&shy;ся). И ко&shy;неч&shy;но же ссы&shy;лать&shy;ся <a href="#orgdd1f5f6">внут&shy;ри до&shy;ку&shy;мен&shy;та</a>.</li>
+
+<li>Или на&shy;при&shy;мер встав&shy;лять вид&shy;ео с YouTube<sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup>:</li>
+</ul>
+
+<p>
+<iframe width="440" height="335" src="https://www.youtube.com/embed/WpHYagYDeSg" frameborder="0" allowfullscreen></iframe>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56dd777" class="outline-3">
+<h3 id="org56dd777">Совмес&shy;ти&shy;мость</h3>
+<div class="outline-text-3" id="text-org56dd777">
+<p>
+Дав&shy;но пи&shy;шу в org-mode свою жизнь. Это и до&shy;ку&shy;мен&shy;та&shy;ция по ра&shy;бо&shy;те, и ка&shy;кие-то лич&shy;ные де&shy;ла, и спис&shy;ки TODO (жаль нет нор&shy;маль&shy;но&shy;го ре&shy;ше&shy;ния для мо&shy;биль&shy;ных уст&shy;ро&shy;йств). Поэ&shy;то&shy;му для ме&shy;ня это чуть
+ли не иде&shy;аль&shy;ный ва&shy;ри&shy;ант для ор&shy;га&shy;ни&shy;за&shy;ции бло&shy;га: еди&shy;ный фор&shy;мат.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4efc71e" class="outline-2">
+<h2 id="org4efc71e">Ито&shy;го</h2>
+<div class="outline-text-2" id="text-org4efc71e">
+<p>
+Коро&shy;че го&shy;во&shy;ря, то, че&shy;го услов&shy;ный Wordpress вот-вот (ещё
+чуть-чуть!) час&shy;тич&shy;но добьет&shy;ся де&shy;сят&shy;ка&shy;ми ме&shy;га&shy;байт PHP-ко&shy;да и мил&shy;ли&shy;она&shy;ми
+че&shy;ло&shy;ве&shy;ко-ча&shy;сов, тут бо&shy;лее-ме&shy;нее есть. Пря&shy;мо вот с по&shy;лу&shy;то&shy;ра пин&shy;ков бе&shy;ри
+и пи&shy;ши хоть о ма&shy;те&shy;ма&shy;ти&shy;ке, хоть о ло&shy;ги&shy;ке, хоть о чём угод&shy;но. Толь&shy;ко вот
+ко&shy;ти&shy;ков тя&shy;же&shy;лее по&shy;стить…
+</p>
+
+<p>
+Полу&shy;чил&shy;ся не&shy;боль&shy;шой эк&shy;скурс в воз&shy;мож&shy;нос&shy;ти Emacs + org-mode, на&shy;деюсь это бу&shy;дет хо&shy;ро&shy;шим на&shy;ча&shy;лом для бло&shy;га :)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org771ba25" class="outline-2">
+<h2 id="org771ba25">Что до&shy;де&shy;лать</h2>
+<div class="outline-text-2" id="text-org771ba25">
+<p>
+Мне бли&shy;зок дух перфек&shy;ци&shy;онис&shy;та, по&shy;это&shy;му хо&shy;те&shy;лось бы до&shy;пи&shy;лить:
+</p>
+</div>
+
+<div id="outline-container-orgbadd552" class="outline-3">
+<h3 id="orgbadd552"><span class="todo TODO">TODO</span> Воз&shy;мож&shy;ность быст&shy;ро по&shy;стить ко&shy;ти&shy;ков</h3>
+</div>
+<div id="outline-container-orgcb1f9b6" class="outline-3">
+<h3 id="orgcb1f9b6"><span class="todo TODO">TODO</span> Вме&shy;ня&shy;емые макро&shy;сы</h3>
+<div class="outline-text-3" id="text-orgcb1f9b6">
+<p>
+Для ме&shy;ня по&shy;ка за&shy;гад&shy;ка, по&shy;че&shy;му в org-mode пред&shy;по&shy;чли собст&shy;вен&shy;ный фор&shy;мат
+макро&shy;сов, ко&shy;гда есть за&shy;ме&shy;ча&shy;тель&shy;ные макро&shy;сы \(\LaTeX\) (ко&shy;то&shy;рые час&shy;тич&shy;но
+здень под&shy;дер&shy;жи&shy;ва&shy;ют&shy;ся, к то&shy;му же)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6ef11e7" class="outline-3">
+<h3 id="org6ef11e7"><span class="done DONE">DONE</span> Пере&shy;но&shy;сы слов</h3>
+<div class="outline-text-3" id="text-org6ef11e7">
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">&#1057;&#1085;&#1086;&#1089;&#1082;&#1080;: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">Это ста&shy;ти&shy;чес&shy;кий ге&shy;не&shy;ра&shy;тор са&shy;йтов,
+т.е. со&shy;зда&shy;ет&shy;ся го&shy;то&shy;вая па&shy;чка HTML-кар&shy;ти&shy;нок, ко&shy;то&shy;рую мож&shy;но раз&shy;да&shy;вать
+хоть че&shy;рез Nginx, хоть из ка&shy;ко&shy;го-ни&shy;будь Arduino</div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><a href="https://github.com/dfeich/org-screenshot">https://github.com/dfeich/org-screenshot</a></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><a href="http://plantuml.com/emacs">http://plantuml.com/emacs</a></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><a href="http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-dot.html">http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-dot.html</a></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5">5</a></sup> <div class="footpara"><a href="http://orgmode.org/manual/Evaluating-code-blocks.html">http://orgmode.org/manual/Evaluating-code-blocks.html</a></div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6">6</a></sup> <div class="footpara"><a href="http://orgmode.org/manual/External-links.html">http://orgmode.org/manual/External-links.html</a></div></div>
+
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7">7</a></sup> <div class="footpara"><a href="http://endlessparentheses.com/embedding-youtube-videos-with-org-mode-links.html">http://endlessparentheses.com/embedding-youtube-videos-with-org-mode-links.html</a></div></div>
+
+
+</div>
+</div>
+</div>
+</div>]]></description>
       <pubDate>2017-10-06</pubDate>
       <guid>https://johnlepikhin.github.io/blog/2017/09/30/initial-commit/</guid>
     </item>
