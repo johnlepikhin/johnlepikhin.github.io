@@ -43,9 +43,13 @@
 Для наглядности картинка:
 
 #+NAME: plot
-#+begin_src gnuplot :var data=DATA :exports results :file /tmp/altitudes.png
+#+begin_src gnuplot :var data=DATA :exports results :file /tmp/altitudes.svg
 set encoding utf8
 set xrange [4200:7500]
-system "(env; ps auxwww) >/tmp/gnuplot.env"
 plot data using 1:2 title "count" smooth csplines
 #+end_src
+
+#+ATTR_HTML: :fallback /tmp/altitudes.svg
+#+ATTR_HTML: title="peak Pobeda deaths"
+#+RESULTS: plot
+[[file:/tmp/altitudes.svg]]
