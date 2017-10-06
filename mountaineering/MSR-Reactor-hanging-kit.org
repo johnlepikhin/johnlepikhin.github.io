@@ -13,7 +13,17 @@
 её можно сделать самостоятельно из тросика, толстой проволоки,
 пластикового дюбеля и изоленты за 15 минут.
 
-[[file:images/MSR-Reactor-hanging1.jpg]]
+#+CAPTION: Дюбелем можно зафиксировать горелку с котелком между тросиков
+file:images/MSR-Reactor-hanging1.jpg
+
+Весы показали вес 31 грамм — такой же, как у оригинала.
+
+#+CAPTION: Снизу кольцо из жесткой проволоки. Горелка накручивается сквозь него.
 [[file:images/MSR-Reactor-hanging2.jpg]]
-[[file:images/MSR-Reactor-hanging3.jpg]]
-[[file:images/MSR-Reactor-hanging4.jpg]]
+
+#+CAPTION: Дюбель для жесткости фиксации обмотан проволокой.
+file:images/MSR-Reactor-hanging3.jpg
+
+file:images/MSR-Reactor-hanging4.jpg
+
+Подвеска испытана летом 2016 года на Памире. Всё хорошо.
