@@ -4,8 +4,8 @@
     <title>The great nothingness</title>
     <link>https://johnlepikhin.github.io</link>
     <description>.</description>
-    <pubDate>Sat, 07 Oct 2017 01:56:46 MSK</pubDate>
-    <lastBuildDate>Sat, 07 Oct 2017 01:56:46 MSK</lastBuildDate>
+    <pubDate>Sat, 07 Oct 2017 02:26:22 MSK</pubDate>
+    <lastBuildDate>Sat, 07 Oct 2017 02:26:22 MSK</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -25,7 +25,7 @@
 Агре&shy;ги&shy;ро&shy;вал дан&shy;ные по НС со смер&shy;тель&shy;ным ис&shy;хо&shy;дом на Побе&shy;де.
 </p>
 
-<table id="org02af6a9" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="org4e34b0b" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1.:</span> Нес&shy;част&shy;ные слу&shy;чаи на п.Побе&shy;да</caption>
 
 <colgroup>
@@ -38,7 +38,7 @@
 <thead>
 <tr>
 <th scope="col" class="org-right">вы&shy;со&shy;та</th>
-<th scope="col" class="org-right">ко&shy;ли&shy;чест&shy;во слу&shy;ча&shy;ев</th>
+<th scope="col" class="org-right">ко&shy;ли&shy;чест&shy;во</th>
 <th scope="col" class="org-left">при&shy;чи&shy;на</th>
 </tr>
 </thead>
@@ -69,14 +69,26 @@
 
 <tr>
 <td class="org-right">6400</td>
-<td class="org-right">2</td>
-<td class="org-left">серд&shy;це, срыв</td>
+<td class="org-right">1</td>
+<td class="org-left">серд&shy;це</td>
+</tr>
+
+<tr>
+<td class="org-right">6400</td>
+<td class="org-right">1</td>
+<td class="org-left">срыв</td>
+</tr>
+
+<tr>
+<td class="org-right">6500</td>
+<td class="org-right">1</td>
+<td class="org-left">срыв</td>
 </tr>
 
 <tr>
 <td class="org-right">6500</td>
 <td class="org-right">2</td>
-<td class="org-left">срыв, пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
+<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
 </tr>
 
 <tr>
@@ -87,8 +99,14 @@
 
 <tr>
 <td class="org-right">6700</td>
+<td class="org-right">1</td>
+<td class="org-left">серд&shy;це</td>
+</tr>
+
+<tr>
+<td class="org-right">6700</td>
 <td class="org-right">2</td>
-<td class="org-left">серд&shy;це, срыв</td>
+<td class="org-left">срыв</td>
 </tr>
 
 <tr>
@@ -99,8 +117,14 @@
 
 <tr>
 <td class="org-right">6900</td>
-<td class="org-right">2</td>
-<td class="org-left">ла&shy;ви&shy;на, пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
+<td class="org-right">1</td>
+<td class="org-left">ла&shy;ви&shy;на</td>
+</tr>
+
+<tr>
+<td class="org-right">6900</td>
+<td class="org-right">1</td>
+<td class="org-left">пе&shy;ре&shy;ох&shy;лаж&shy;де&shy;ние</td>
 </tr>
 
 <tr>
@@ -133,25 +157,16 @@
 (груп&shy;по&shy;вая смерть счи&shy;та&shy;ет&shy;ся за один эпи&shy;зод, по фак&shy;ту циф&shy;ры ко&shy;неч&shy;но серь&shy;ез&shy;нее)
 </p>
 
-<p>
-Таким об&shy;ра&shy;зом:
-</p>
-<ul class="org-ul">
-<li>на по&shy;ясе 6300-7100 со&shy;сре&shy;до&shy;то&shy;чить&shy;ся на стра&shy;хов&shy;ке</li>
-<li>на&shy;чи&shy;ная с 6500 на&shy;до край&shy;не вни&shy;ма&shy;тель&shy;но сле&shy;дить за при&shy;зна&shy;ка&shy;ми оте&shy;ка
-лег&shy;ких и мо&shy;зга. Ну и оче&shy;вид&shy;но не за&shy;си&shy;жи&shy;вать&shy;ся в пе&shy;ще&shy;рах, по
-воз&shy;мож&shy;нос&shy;ти.</li>
-</ul>
-
-<p>
-Для на&shy;гляд&shy;нос&shy;ти кар&shy;тин&shy;ка:
-</p>
-
+<div id="outline-container-org7fd05c1" class="outline-2">
+<h2 id="org7fd05c1">Для на&shy;гляд&shy;нос&shy;ти кар&shy;тин&shy;ка</h2>
+<div class="outline-text-2" id="text-org7fd05c1">
 
 <div class="figure">
 <p><object type="image/svg+xml" data="/assets/blog/2016/03/12/статистика-несчастных-случаев-на-победе/altitudes.svg" class="org-svg">
 <img src="/assets/blog/2016/03/12/статистика-несчастных-случаев-на-победе/altitudes.svg" class="org-svg" /></object>
 </p>
+</div>
+</div>
 </div>
 
 </div>
