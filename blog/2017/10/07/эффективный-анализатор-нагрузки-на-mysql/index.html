@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Эффективный анализатор нагрузки на MySQL - The great nothingness</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Evgenii Lepikhin" />
+    <meta name="keywords" content="MySQL, администрирование" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">The great nothingness</a></h1>
+        <p>.</p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/mountaineering/">Mountaineering</a></li>
+          <li><a href="/tech/">Tech</a></li>
+          <li><a href="/tags/">Тэги</a></li>
+          <li><a href="/about/">О блоге</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Искать">
+          <input type="hidden" name="as_sitesearch" value="johnlepikhin.github.io">
+        </form>
+        <img class="avatar" src="https://avatars0.githubusercontent.com/u/381986?v=4&amp;s=80" />
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>Эффективный анализатор нагрузки на MySQL</h1>
+<p>
+Есть в яд&shy;ре Linux от&shy;лич&shy;ная шту&shy;ка: <a href="https://en.wikipedia.org/wiki/OProfile">OProfile</a>. Это ста&shy;тис&shy;ти&shy;чес&shy;кий
+ана&shy;ли&shy;за&shy;тор на&shy;груз&shy;ки на си&shy;сте&shy;му. Рабо&shy;та&shy;ет так: не&shy;сколь&shy;ко раз в се&shy;кун&shy;ду
+оно оп&shy;ра&shy;ши&shy;ва&shy;ет яд&shy;ро на пред&shy;мет в ка&shy;ком кон&shy;тек&shy;сте (т.е. в ка&shy;кой
+функ&shy;ции) ка&shy;кие яд&shy;ра CPU на&shy;хо&shy;дят&shy;ся. Соб&shy;ира&shy;ет&shy;ся ста&shy;тис&shy;ти&shy;ка, за&shy;тем мож&shy;но
+по&shy;смот&shy;реть ли&shy;де&shy;ров. Это очень удоб&shy;ный и прос&shy;той спо&shy;соб про&shy;фи&shy;ли&shy;ро&shy;ва&shy;ния
+си&shy;сте&shy;мы.
+</p>
+
+<p>
+И вот од&shy;наж&shy;ды при&shy;шла в го&shy;ло&shy;ву мысль на&shy;пи&shy;сать ана&shy;ло&shy;гич&shy;ный ана&shy;ли&shy;за&shy;тор
+для MySQL. Реше&shy;ние по&shy;лу&shy;чи&shy;лось не&shy;ожи&shy;дан&shy;но удач&shy;ным и да&shy;же при&shy;обре&shy;ло
+не&shy;ко&shy;то&shy;рый ком&shy;мер&shy;чес&shy;кий успех. Мне не жал&shy;ко, по&shy;это&shy;му де&shy;люсь:
+</p>
+
+<p>
+<a href="https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_query_stats">https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_query_stats</a>
+</p>
+
+<p>
+За ссыл&shy;ку на ав&shy;то&shy;ра бу&shy;ду ко&shy;неч&shy;но бла&shy;го&shy;да&shy;рен, в скрипт ко&shy;пи&shy;ра&shy;йты обе&shy;щаю
+ко&shy;гда-ни&shy;будь до&shy;ба&shy;вить ;-)
+</p>
+
+<p>
+Рядом ле&shy;жит вспо&shy;мо&shy;га&shy;тель&shy;ный скрипт, ко&shy;то&shy;рый ищ&shy;ет по&shy;хо&shy;жие за&shy;про&shy;сы по
+ша&shy;бло&shy;ну:
+</p>
+
+<p>
+<a href="https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_similar_queries">https://github.com/johnlepikhin/auto_admin_tools/blob/master/mysql/mysql_similar_queries</a>
+</p>
+
+<p>
+Всем до&shy;бра.
+</p>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="Дата создания" class="post-info">2017-10-07</span>
+        <span title="Дата последнего изменения" class="post-info">2017-10-07</span>
+        <span title="Автор" class="post-info">Evgenii Lepikhin</span>
+      </div>
+      <span title="Тэги" class="post-info">Тэги: <a href="/tags/mysql/">MySQL</a>, <a href="/tags/администрирование/">администрирование</a></span>
+      <section>
+        <h1>Комментарии (выключены)</h1>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <div class="footer">
+        <p>
+          Copyleft 2017 - ∞ <a href="mailto:e &lt;dot&gt; lepikhin &lt;at&gt; corp &lt;dot&gt; mail &lt;dot&gt; ru">Evgenii Lepikhin</a> (<a href="https://github.com/johnlepikhin">GitHub</a>)
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
