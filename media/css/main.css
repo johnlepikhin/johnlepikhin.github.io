@@ -1,26 +1,3 @@
-/******************************************************
- * I copied these styles from markdotto.com, who is
- * the creator of bootstrap, and I also did some
- * modification. Thanks Mark for the beautiful theme,
- * so I reserved the @mdo sign below.
- *****************************************************/
-
-/*
-  __
-  __                  /\ \
-  /'_`\_    ___ ___    \_\ \    ___
-  /'/'_` \ /' __` __`\  /'_` \  / __`\
-  /\ \ \L\ \/\ \/\ \/\ \/\ \L\ \/\ \L\ \
-  \ \ `\__,_\ \_\ \_\ \_\ \___,_\ \____/
-  \ `\_____\\/_/\/_/\/_/\/__,_ /\/___/
-  `\/_____/
-
-*/
-
-
-
-/* Body resets
-   -------------------------------------------------- */
 
 * {
     -webkit-box-sizing: border-box;
@@ -83,12 +60,12 @@ b, strong {
     font-weight: bold;
     color: #333;
 }
-b:before, b:after, strong:before, strong:after {
-    content: "*";
-}
-i:before, i:after, em:before, em:after {
-    content: "/";
-}
+/* b:before, b:after, strong:before, strong:after {
+ *     content: "*";
+ * }
+ * i:before, i:after, em:before, em:after {
+ *     content: "/";
+ * } */
 ul, ol {
     padding: 0;
     margin: 0 0 20px;
@@ -99,6 +76,16 @@ code, pre {
 code {
     background-color: #f5f5f5;
 }
+
+.org-src-container, .prettyprint {
+    filter: grayscale(100%);
+    transition: .2s ease-in-out;
+}
+.org-src-container:hover, .prettyprint:hover {
+    filter: grayscale(0%);
+    transition: .2s ease-in-out;
+}
+
 pre {
     display: block;
     margin: 0 0 14px;
@@ -138,6 +125,7 @@ sup a:after {
 }
 a:hover {
     text-decoration: underline;
+    color: blue;
 }
 table {
     line-height: 2.5;
@@ -239,21 +227,37 @@ table th.right, table td.right {
     display: block;
     color: #ccc;
 }
-.post img {
-    max-width: 100%;
+
+.post .figure {
     filter: grayscale(100%);
     transition: .2s ease-in-out;
 }
-.post img:hover {
+.post .figure:hover {
     filter: grayscale(0%);
     transition: .2s ease-in-out;
 }
-.post iframe {
+
+.post img {
+    max-width: 100%;
+}
+
+.post div.yt-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.post div.yt-container iframe {
     filter: grayscale(100%);
     transition: .2s ease-in-out;
     border-radius: 3px 3px 3px 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.post iframe:hover {
+.post .yt-container iframe:hover {
     filter: grayscale(0%);
     transition: .2s ease-in-out;
 }
