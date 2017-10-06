@@ -128,15 +128,15 @@ unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 *** Подготовка
 
 #+BEGIN_SRC sh
-mkdir /root/selinux_my_module
-cd /root/selinux_my_module
-ln -s /usr/share/selinux/devel/Makefile
-vim my_module.te
+mkdir "/root/selinux_my_module"
+cd "/root/selinux_my_module"
+ln -s "/usr/share/selinux/devel/Makefile"
+vim "my_module.te"
 #+END_SRC
 
 *** Создание минимального модуля
 
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC c
 module my_module 1.0;
 
 require {
@@ -151,7 +151,7 @@ type mytype_exec_t;
 role unconfined_r types mytype_t;
 
 type_transition unconfined_t mytype_exec_t : process mytype_t;
-#+END_EXAMPLE
+#+END_SRC
 
 *** Сборка и загрузка
 
