@@ -1,0 +1,17 @@
+#+TITLE:       Самодельная подвеска для MSR Reactor
+#+AUTHOR:      Evgenii Lepikhin
+#+EMAIL:       e.lepikhin@corp.mail.ru
+#+DATE:        2016-05-14
+#+URI:         /blog/%y/%m/%d/подвеска-для-msr-reactor
+#+KEYWORDS:    DIY, снаряжение, MSR Reactor
+#+TAGS:        DIY, снаряжение
+#+LANGUAGE:    ru
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Самодельная подвеска для горелки MSR Reactor
+
+Система подвески для горелки MSR Reactor стоит порядка $30. Между тем,
+её можно сделать самостоятельно из тросика, толстой проволоки,
+пластикового дюбеля и изоленты за 15 минут.
+
+[[images/MSR-Reactor-hanging1.jpg]]
+
