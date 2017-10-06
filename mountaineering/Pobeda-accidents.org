@@ -66,6 +66,6 @@ set xrange [4200:7500]
 plot data using 1:2 title "count" smooth csplines
 #+end_src
 #+RESULTS: plot
-[[file:images/altitudes.png]]
+
 
 
