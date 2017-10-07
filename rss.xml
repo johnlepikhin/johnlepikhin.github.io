@@ -4,8 +4,8 @@
     <title>The great nothingness</title>
     <link>https://johnlepikhin.github.io</link>
     <description>.</description>
-    <pubDate>Sat, 07 Oct 2017 10:17:28 MSK</pubDate>
-    <lastBuildDate>Sat, 07 Oct 2017 10:17:28 MSK</lastBuildDate>
+    <pubDate>Sat, 07 Oct 2017 10:21:42 MSK</pubDate>
+    <lastBuildDate>Sat, 07 Oct 2017 10:21:42 MSK</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -25,7 +25,7 @@
 Агре&shy;ги&shy;ро&shy;вал дан&shy;ные по НС со смер&shy;тель&shy;ным ис&shy;хо&shy;дом на Побе&shy;де.
 </p>
 
-<table id="org4fe37aa" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="orgfee38a0" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1.:</span> Нес&shy;част&shy;ные слу&shy;чаи на п.Побе&shy;да</caption>
 
 <colgroup>
@@ -157,9 +157,9 @@
 (груп&shy;по&shy;вая смерть счи&shy;та&shy;ет&shy;ся за один эпи&shy;зод, по фак&shy;ту циф&shy;ры ко&shy;неч&shy;но серь&shy;ез&shy;нее)
 </p>
 
-<div id="outline-container-org2084c26" class="outline-2">
-<h2 id="org2084c26">Для на&shy;гляд&shy;нос&shy;ти кар&shy;тин&shy;ка</h2>
-<div class="outline-text-2" id="text-org2084c26">
+<div id="outline-container-orgb1d222f" class="outline-2">
+<h2 id="orgb1d222f">Для на&shy;гляд&shy;нос&shy;ти кар&shy;тин&shy;ка</h2>
+<div class="outline-text-2" id="text-orgb1d222f">
 
 <div class="figure">
 <p><object type="image/svg+xml" data="/assets/blog/2016/03/12/статистика-несчастных-случаев-на-победе/altitudes.svg" class="org-svg">
@@ -249,13 +249,13 @@
 на бло&shy;ги из org-mode, сде&shy;лать это на&shy;вер&shy;ное сто&shy;ило ещё лет 10 на&shy;зад.
 </p>
 
-<div id="outline-container-orgcdd157f" class="outline-2">
-<h2 id="orgcdd157f">Поче&shy;му это удоб&shy;нее?</h2>
-<div class="outline-text-2" id="text-orgcdd157f">
+<div id="outline-container-orge92be32" class="outline-2">
+<h2 id="orge92be32">Поче&shy;му это удоб&shy;нее?</h2>
+<div class="outline-text-2" id="text-orge92be32">
 </div>
-<div id="outline-container-orgd6202b5" class="outline-3">
-<h3 id="orgd6202b5">Текс&shy;то&shy;вые фа&shy;йлы</h3>
-<div class="outline-text-3" id="text-orgd6202b5">
+<div id="outline-container-org7d92c3e" class="outline-3">
+<h3 id="org7d92c3e">Текс&shy;то&shy;вые фа&shy;йлы</h3>
+<div class="outline-text-3" id="text-org7d92c3e">
 <ul class="org-ul">
 <li>Прак&shy;ти&shy;чес&shy;ки бес&shy;плат&shy;но по ис&shy;поль&shy;зо&shy;ва&shy;нию ре&shy;сур&shy;сов, я мо&shy;гу хос&shy;тить
 блог букваль&shy;но где угод&shy;но<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
@@ -270,9 +270,9 @@
 </div>
 </div>
 
-<div id="outline-container-org3afe13d" class="outline-3">
-<h3 id="org3afe13d">Сила org-mode</h3>
-<div class="outline-text-3" id="text-org3afe13d">
+<div id="outline-container-org9e6b2e9" class="outline-3">
+<h3 id="org9e6b2e9">Сила org-mode</h3>
+<div class="outline-text-3" id="text-org9e6b2e9">
 <ul class="org-ul">
 <li>Я мо&shy;гу за се&shy;кун&shy;ду пря&shy;мо из ре&shy;дак&shy;то&shy;ра вста&shy;вить скриншот<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup></li>
 </ul>
@@ -297,7 +297,7 @@ Bob --&gt; Alice: Authentication Response
 </div>
 
 
-<div id="org27a321a" class="figure">
+<div id="org8364869" class="figure">
 <p><img src="/assets/blog/2017/09/30/initial-commit/plantuml-example.png" alt="plantuml-example.png" />
 </p>
 <p><span class="figure-number">&#1056;&#1080;&#1089;. 2.: </span>При&shy;мер диа&shy;грам&shy;мы UML</p>
@@ -308,7 +308,7 @@ Bob --&gt; Alice: Authentication Response
 </ul>
 
 <div class="org-src-container">
-<pre><code class="src src-dot" id="orgccba102">graph example { 
+<pre><code class="src src-dot" id="org20102c9">graph example { 
         a -- b;
         b -- c;
         b -- d;
@@ -317,7 +317,7 @@ Bob --&gt; Alice: Authentication Response
 </code></pre>
 </div>
 
-<div id="org77c9afb" class="figure">
+<div id="org564a86f" class="figure">
 <p><img src="/assets/blog/2017/09/30/initial-commit/graphviz-example.png" alt="graphviz-example.png" />
 </p>
 <p><span class="figure-number">&#1056;&#1080;&#1089;. 3.: </span>При&shy;мер гра&shy;фа Graphviz</p>
@@ -373,7 +373,7 @@ Bob --&gt; Alice: Authentication Response
 </div>
 
 <ul class="org-ul">
-<li>Из ре&shy;дак&shy;то&shy;ра воз&shy;мож&shy;но за&shy;пус&shy;кать не толь&shy;ко ку&shy;соч&shy;ки ко&shy;да, но и на&shy;при&shy;мер вы&shy;зы&shy;вать <a href="urxvt -e ssh root@microsoft.com">внеш&shy;ние ко&shy;ман&shy;ды</a><sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup> (чи&shy;та&shy;те&shy;лям из бра&shy;узе&shy;ра так не по&shy;лу&shy;чит&shy;ся). И ко&shy;неч&shy;но же ссы&shy;лать&shy;ся <a href="#orgd6202b5">внут&shy;ри до&shy;ку&shy;мен&shy;та</a>.</li>
+<li>Из ре&shy;дак&shy;то&shy;ра воз&shy;мож&shy;но за&shy;пус&shy;кать не толь&shy;ко ку&shy;соч&shy;ки ко&shy;да, но и на&shy;при&shy;мер вы&shy;зы&shy;вать <a href="urxvt -e ssh root@microsoft.com">внеш&shy;ние ко&shy;ман&shy;ды</a><sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup> (чи&shy;та&shy;те&shy;лям из бра&shy;узе&shy;ра так не по&shy;лу&shy;чит&shy;ся). И ко&shy;неч&shy;но же ссы&shy;лать&shy;ся <a href="#org7d92c3e">внут&shy;ри до&shy;ку&shy;мен&shy;та</a>.</li>
 
 <li>Или на&shy;при&shy;мер встав&shy;лять вид&shy;ео с YouTube<sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup>:</li>
 </ul>
@@ -384,9 +384,9 @@ Bob --&gt; Alice: Authentication Response
 </div>
 </div>
 
-<div id="outline-container-org76e76ac" class="outline-3">
-<h3 id="org76e76ac">Совмес&shy;ти&shy;мость</h3>
-<div class="outline-text-3" id="text-org76e76ac">
+<div id="outline-container-org89b2c4c" class="outline-3">
+<h3 id="org89b2c4c">Совмес&shy;ти&shy;мость</h3>
+<div class="outline-text-3" id="text-org89b2c4c">
 <p>
 Дав&shy;но пи&shy;шу в org-mode свою жизнь. Это и до&shy;ку&shy;мен&shy;та&shy;ция по ра&shy;бо&shy;те, и ка&shy;кие-то лич&shy;ные де&shy;ла, и спис&shy;ки TODO (жаль нет нор&shy;маль&shy;но&shy;го ре&shy;ше&shy;ния для мо&shy;биль&shy;ных уст&shy;ро&shy;йств). Поэ&shy;то&shy;му для ме&shy;ня это чуть
 ли не иде&shy;аль&shy;ный ва&shy;ри&shy;ант для ор&shy;га&shy;ни&shy;за&shy;ции бло&shy;га: еди&shy;ный фор&shy;мат.
@@ -395,9 +395,9 @@ Bob --&gt; Alice: Authentication Response
 </div>
 </div>
 
-<div id="outline-container-org9fbcd30" class="outline-2">
-<h2 id="org9fbcd30">Ито&shy;го</h2>
-<div class="outline-text-2" id="text-org9fbcd30">
+<div id="outline-container-org0026614" class="outline-2">
+<h2 id="org0026614">Ито&shy;го</h2>
+<div class="outline-text-2" id="text-org0026614">
 <p>
 Коро&shy;че го&shy;во&shy;ря, то, че&shy;го услов&shy;ный Wordpress вот-вот (ещё
 чуть-чуть!) час&shy;тич&shy;но добьет&shy;ся де&shy;сят&shy;ка&shy;ми ме&shy;га&shy;байт PHP-ко&shy;да и мил&shy;ли&shy;она&shy;ми
@@ -412,20 +412,20 @@ Bob --&gt; Alice: Authentication Response
 </div>
 </div>
 
-<div id="outline-container-org5efa83e" class="outline-2">
-<h2 id="org5efa83e">Что до&shy;де&shy;лать</h2>
-<div class="outline-text-2" id="text-org5efa83e">
+<div id="outline-container-org54255e5" class="outline-2">
+<h2 id="org54255e5">Что до&shy;де&shy;лать</h2>
+<div class="outline-text-2" id="text-org54255e5">
 <p>
 Мне бли&shy;зок дух перфек&shy;ци&shy;онис&shy;та, по&shy;это&shy;му хо&shy;те&shy;лось бы до&shy;пи&shy;лить:
 </p>
 </div>
 
-<div id="outline-container-org789b001" class="outline-3">
-<h3 id="org789b001"><span class="todo TODO">TODO</span> Воз&shy;мож&shy;ность быст&shy;ро по&shy;стить ко&shy;ти&shy;ков</h3>
+<div id="outline-container-orgce29734" class="outline-3">
+<h3 id="orgce29734"><span class="todo TODO">TODO</span> Воз&shy;мож&shy;ность быст&shy;ро по&shy;стить ко&shy;ти&shy;ков</h3>
 </div>
-<div id="outline-container-org884cde4" class="outline-3">
-<h3 id="org884cde4"><span class="todo TODO">TODO</span> Вме&shy;ня&shy;емые макро&shy;сы</h3>
-<div class="outline-text-3" id="text-org884cde4">
+<div id="outline-container-org7e76b4a" class="outline-3">
+<h3 id="org7e76b4a"><span class="todo TODO">TODO</span> Вме&shy;ня&shy;емые макро&shy;сы</h3>
+<div class="outline-text-3" id="text-org7e76b4a">
 <p>
 Для ме&shy;ня по&shy;ка за&shy;гад&shy;ка, по&shy;че&shy;му в org-mode пред&shy;по&shy;чли собст&shy;вен&shy;ный фор&shy;мат
 макро&shy;сов, ко&shy;гда есть за&shy;ме&shy;ча&shy;тель&shy;ные макро&shy;сы \(\LaTeX\) (ко&shy;то&shy;рые час&shy;тич&shy;но
@@ -434,9 +434,9 @@ Bob --&gt; Alice: Authentication Response
 </div>
 </div>
 
-<div id="outline-container-org32f76d0" class="outline-3">
-<h3 id="org32f76d0"><span class="done DONE">DONE</span> Пере&shy;но&shy;сы слов</h3>
-<div class="outline-text-3" id="text-org32f76d0">
+<div id="outline-container-orgc8e5d9f" class="outline-3">
+<h3 id="orgc8e5d9f"><span class="done DONE">DONE</span> Пере&shy;но&shy;сы слов</h3>
+<div class="outline-text-3" id="text-orgc8e5d9f">
 </div>
 </div>
 </div>
