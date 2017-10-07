@@ -1,14 +1,14 @@
 #+TITLE:       Как правильно ремонтировать ткани наряжения
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
-#+DATE:        2017-05-07 Sat
+#+DATE:        2017-05-07
 #+URI:         /blog/%y/%m/%d/как-правильно-ремонтировать-ткани-наряжения
 #+KEYWORDS:    DIY, снаряжение, ремонт
 #+TAGS:        DIY, снаряжение, ремонт
 #+LANGUAGE:    ru
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 
-[[file:tent-wrong-repair.org::*%C2%AB%D0%AF%20%D0%B2%D1%81%D0%B5%20%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%B8%D0%BB!%C2%BB][С чего всё началось]]
+[[file:./tent-wrong-repair.org][С чего всё началось]]
 
 Раз уж на то пошло, пост о том как я клею палатки, спальники, пуховки
 и что угодно ещё, сделанное из тонкой современной ткани.

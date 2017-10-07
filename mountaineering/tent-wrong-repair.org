@@ -1,7 +1,7 @@
 #+TITLE:       Как нельзя ремонтировать палатку
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
-#+DATE:        2017-10-07 Sat
+#+DATE:        2017-05-07
 #+URI:         /blog/%y/%m/%d/как-клеить-палатку
 #+KEYWORDS:    снаряжение
 #+TAGS:        снаряжение
@@ -39,4 +39,4 @@ file:./images/tent-wrong-repair2.jpg
 #+CAPTION: Вот так выглядит палатка под пришитой заплаткой.
 file:./images/tent-wrong-repair3.jpg
 
-[[file:tent-correct-repair.org][Продолжение истории: как чинить правильно]].
+[[file:./tent-correct-repair.org][Продолжение истории: как чинить правильно]].
