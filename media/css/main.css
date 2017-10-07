@@ -229,11 +229,11 @@ table th.right, table td.right {
 }
 
 .post .figure {
-    filter: grayscale(100%);
+    filter: grayscale(100%) contrast(115%);
     transition: .2s ease-in-out;
 }
 .post .figure:hover {
-    filter: grayscale(0%);
+    filter: grayscale(0%) contrast(100%);
     transition: .2s ease-in-out;
 }
 
