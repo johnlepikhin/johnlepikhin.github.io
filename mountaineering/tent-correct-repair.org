@@ -2,7 +2,7 @@
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
 #+DATE:        2017-05-07
-#+URI:         /blog/%y/%m/%d/как-правильно-ремонтировать-ткани-наряжения
+#+URI:         /blog/%y/%m/%d/tent-correct-repair
 #+KEYWORDS:    DIY, снаряжение, ремонт
 #+TAGS:        DIY, снаряжение, ремонт
 #+LANGUAGE:    ru

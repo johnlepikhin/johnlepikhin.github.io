@@ -2,7 +2,7 @@
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
 #+DATE:        2017-05-07
-#+URI:         /blog/%y/%m/%d/как-клеить-палатку
+#+URI:         /blog/%y/%m/%d/tent-wrong-repair
 #+KEYWORDS:    снаряжение
 #+TAGS:        снаряжение
 #+LANGUAGE:    ru
