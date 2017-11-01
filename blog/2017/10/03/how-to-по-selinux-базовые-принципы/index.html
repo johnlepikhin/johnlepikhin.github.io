@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>How-to по SELinux, базовые принципы - The great nothingness</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Evgenii Lepikhin" />
+    <meta name="description" content="Основы SELinux и работы с ним" />
+    <meta name="keywords" content="SELinux, безопасность, linux, администрирование" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">The great nothingness</a></h1>
+        <p>.</p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/mountaineering/">Mountaineering</a></li>
+          <li><a href="/tech/">Tech</a></li>
+          <li><a href="/tags/">Тэги</a></li>
+          <li><a href="/about/">О блоге</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Искать">
+          <input type="hidden" name="as_sitesearch" value="johnlepikhin.github.io">
+        </form>
+        <img class="avatar" src="https://avatars0.githubusercontent.com/u/381986?v=4&amp;s=80" />
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>How-to по SELinux, базовые принципы</h1>
+<p>
+По ра&shy;бо&shy;те раз&shy;би&shy;рал&shy;ся с SELinux под CentOS, на&shy;пи&shy;сал для се&shy;бя
+до&shy;ку&shy;мен&shy;та&shy;цию. Решил по&shy;де&shy;лить&shy;ся.
+</p>
+
+<div id="outline-container-orga497e61" class="outline-2">
+<h2 id="orga497e61">Подго&shy;то&shy;вка</h2>
+<div class="outline-text-2" id="text-orga497e61">
+</div>
+<div id="outline-container-orgf86bff2" class="outline-3">
+<h3 id="orgf86bff2">Поста&shy;вить па&shy;ке&shy;ты (CentOS)</h3>
+<div class="outline-text-3" id="text-orgf86bff2">
+<div class="org-src-container">
+<pre><code class="src src-sh">yum install setools-console policycoreutils-python
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org456ba56" class="outline-2">
+<h2 id="org456ba56">Конц&shy;епт</h2>
+<div class="outline-text-2" id="text-org456ba56">
+</div>
+<div id="outline-container-org8b918dd" class="outline-3">
+<h3 id="org8b918dd">Поли&shy;ти&shy;ки</h3>
+<div class="outline-text-3" id="text-org8b918dd">
+<p>
+Для вс&shy;ей си&shy;сте&shy;мы за&shy;да&shy;ет&shy;ся <a id="org0ae406b"></a>policy, ко&shy;то&shy;рая бу&shy;дет при&shy;ме&shy;не&shy;на ко всем
+об&shy;ъек&shy;там. По умо&shy;лча&shy;нию дейст&shy;ву&shy;ет по&shy;ли&shy;ти&shy;ка targeted. Поли&shy;ти&shy;ка за&shy;да&shy;ет&shy;ся
+в фа&shy;йле <code>/etc/sysconfig/selinux</code>
+</p>
+
+<p>
+Крат&shy;ко:
+</p>
+<ul class="org-ul">
+<li><code>targeted</code>: всем всё раз&shy;ре&shy;ше&shy;но, за ис&shy;клю&shy;че&shy;ни&shy;ем про&shy;цес&shy;сов, для ко&shy;то&shy;рых
+пра&shy;ви&shy;ла яв&shy;но за&shy;да&shy;ны (в CentOS их до&shy;воль&shy;но мно&shy;го, в ос&shy;нов&shy;ном се&shy;те&shy;вые
+де&shy;мо&shy;ны)</li>
+<li><code>strict</code>: то же что и targeted, толь&shy;ко до&shy;ступ ог&shy;ра&shy;ни&shy;чен и не толь&shy;ко
+се&shy;те&shy;вым про&shy;цес&shy;сам</li>
+<li><code>minimum</code> (в CentOS ста&shy;вит&shy;ся от&shy;дель&shy;но, па&shy;ке&shy;том
+<code>selinux-policy-minimum</code>): targeted, толь&shy;ко по умо&shy;лча&shy;нию со&shy;всем нет
+ни&shy;ка&shy;ких пра&shy;вил</li>
+<li><code>MLS</code>: ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb64edd8" class="outline-3">
+<h3 id="orgb64edd8">Режи&shy;мы SELinux</h3>
+<div class="outline-text-3" id="text-orgb64edd8">
+<ul class="org-ul">
+<li>disabled: SELinux вы&shy;клю&shy;чен</li>
+<li><a id="orga0be86c"></a> <code>enforcing</code>: вклю&shy;чен, пра&shy;ви&shy;ла бло&shy;ки&shy;ру&shy;ют, со&shy;об&shy;ще&shy;ния о бло&shy;ки&shy;ров&shy;ке
+ухо&shy;дят в <code>/var/log/audit/audit.log</code></li>
+<li><a id="orgff6ae01"></a> <code>permissive</code>: ни&shy;че&shy;го не бло&shy;ки&shy;ру&shy;ет&shy;ся, толь&shy;ко ухо&shy;дят со&shy;об&shy;ще&shy;ния в
+<code>/var/log/audit/audit.log</code></li>
+</ul>
+
+<p>
+Пере&shy;клю&shy;чить&shy;ся в permissive:
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-sh">setenforce 0
+</code></pre>
+</div>
+
+<p>
+Пере&shy;клю&shy;чить&shy;ся в enforcing:
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-sh">setenforce 1
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd60bebd" class="outline-3">
+<h3 id="orgd60bebd">Кон&shy;тек&shy;сты</h3>
+<div class="outline-text-3" id="text-orgd60bebd">
+<p>
+Каж&shy;дый об&shy;ъект ми&shy;ра (файл, про&shy;цесс и т.д.) име&shy;ют свойст&shy;во <a id="orga42addc"></a>context. В
+SELinux со&shy;вер&shy;шен&shy;но не важ&shy;но кто и ку&shy;да сде&shy;лал su, fork и т.д.&nbsp;—
+кон&shy;текст на&shy;следу&shy;ет&shy;ся до тех пор, по&shy;ка яв&shy;но в пра&shy;ви&shy;лах SELinux не
+ска&shy;за&shy;но, что на&shy;до сме&shy;нить кон&shy;текст
+</p>
+
+<p>
+Каж&shy;дый кон&shy;текст со&shy;сто&shy;ит из трех час&shy;тей:
+</p>
+<ol class="org-ol">
+<li><a id="org341760c"></a> <code>user</code></li>
+<li><a id="orgb6057d8"></a> <code>role</code></li>
+<li><a id="org5d9435a"></a> <code>type</code> (у про&shy;цес&shy;сов его при&shy;ня&shy;то на&shy;зы&shy;вать <a id="org4b46b19"></a>domain, но раз&shy;ни&shy;цы ни&shy;ка&shy;кой нет)</li>
+</ol>
+
+<p>
+Для фа&shy;йлов кон&shy;текст мож&shy;но по&shy;смот&shy;реть так:
+</p>
+
+<pre class="example">
+# ls -dZ /
+dr-xr-xr-x. root root system_u:object_r:root_t:s0      /
+</pre>
+
+<p>
+Здесь:
+</p>
+<ul class="org-ul">
+<li><code>system_u</code>: user</li>
+<li><code>object_r</code>: role</li>
+<li><code>s0</code>: type</li>
+</ul>
+
+<p>
+Ана&shy;ло&shy;гич&shy;но, мож&shy;но по&shy;смот&shy;реть для про&shy;цес&shy;сов:
+</p>
+
+<pre class="example">
+# ps auxwZ|head -2
+LABEL                           USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+system_u:system_r:init_t:s0     root         1  0.0  0.3  19236  1572 ?        Ss   10:54   0:00 /sbin/init
+</pre>
+
+<p>
+То, что у /sbin/init и у кор&shy;не&shy;вой ди&shy;рек&shy;то&shy;рии оди&shy;на&shy;ко&shy;вый кон&shy;текст ни о
+чём не го&shy;во&shy;рит. Пра&shy;ва на до&shy;ступ к кор&shy;ню у init бу&shy;дут толь&shy;ко ес&shy;ли об
+этом яв&shy;но ска&shy;за&shy;но в пра&shy;ви&shy;лах по&shy;ли&shy;ти&shy;ки.
+</p>
+
+<p>
+Точ&shy;но так же мож&shy;но узнать кон&shy;текст те&shy;ку&shy;ще&shy;го шел&shy;ла:
+</p>
+
+<pre class="example">
+# id -Z
+unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orge1e070e" class="outline-3">
+<h3 id="orge1e070e">Аудит</h3>
+<div class="outline-text-3" id="text-orge1e070e">
+<p>
+В ре&shy;жи&shy;мах enforcing и permissive си&shy;сте&shy;ма пи&shy;шет в лог
+<code>/var/log/audit/audit.log</code> обо всех со&shy;бы&shy;ти&shy;ях безопа&shy;снос&shy;ти. Этот лог
+по&shy;ле&shy;зен как при руч&shy;ном со&shy;зда&shy;нии пра&shy;вил, так и с по&shy;мощью audit2allow.
+</p>
+
+<p>
+Если auditd не за&shy;пу&shy;щен, со&shy;об&shy;ще&shy;ния уй&shy;дут в <code>/var/log/messages</code>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0c7aff7" class="outline-2">
+<h2 id="org0c7aff7">Соз&shy;да&shy;ние но&shy;вых пра&shy;вил</h2>
+<div class="outline-text-2" id="text-org0c7aff7">
+<p>
+Лучше все&shy;го это де&shy;лать че&shy;рез на&shy;пи&shy;са&shy;ние мо&shy;ду&shy;ля. Модуль SELinux мож&shy;но
+под&shy;гр&shy;ужать, вы&shy;гру&shy;жать, рас&shy;прост&shy;ра&shy;нять. Удоб&shy;но.
+</p>
+</div>
+
+<div id="outline-container-orga9474ce" class="outline-3">
+<h3 id="orga9474ce">Общий план</h3>
+<div class="outline-text-3" id="text-orga9474ce">
+<ul class="org-ul">
+<li>Соз&shy;дать но&shy;вый type для за&shy;пус&shy;ка&shy;емо&shy;го фа&shy;йла</li>
+<li>Соз&shy;дать но&shy;вый type, ко&shy;то&shy;рый бу&shy;дет domain ра&shy;бо&shy;та&shy;юще&shy;го при&shy;ло&shy;же&shy;ния</li>
+<li>По умо&shy;лча&shy;нию у но&shy;во&shy;го до&shy;ме&shy;на нет ни&shy;ка&shy;ких прав. Поэ&shy;то&shy;му его мож&shy;но
+за&shy;пус&shy;тить в permissive mode</li>
+<li>С по&shy;мощью audit2allow со&shy;здать ша&shy;блон пра&shy;вил, от&shy;ре&shy;дак&shy;ти&shy;ро&shy;вать их.</li>
+<li>Вклю&shy;чить ре&shy;жим enforcing.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8c438e9" class="outline-3">
+<h3 id="org8c438e9">Соз&shy;да&shy;ние мо&shy;ду&shy;ля</h3>
+<div class="outline-text-3" id="text-org8c438e9">
+</div>
+<div id="outline-container-orgef13ac1" class="outline-4">
+<h4 id="orgef13ac1">Подго&shy;то&shy;вка</h4>
+<div class="outline-text-4" id="text-orgef13ac1">
+<div class="org-src-container">
+<pre><code class="src src-sh">mkdir <span style="color: #8b2252;">"/root/selinux_my_module"</span>
+<span style="color: #483d8b;">cd</span> <span style="color: #8b2252;">"/root/selinux_my_module"</span>
+ln -s <span style="color: #8b2252;">"/usr/share/selinux/devel/Makefile"</span>
+vim <span style="color: #8b2252;">"my_module.te"</span>
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org220cce7" class="outline-4">
+<h4 id="org220cce7">Соз&shy;да&shy;ние ми&shy;ни&shy;маль&shy;но&shy;го мо&shy;ду&shy;ля</h4>
+<div class="outline-text-4" id="text-org220cce7">
+<div class="org-src-container">
+<pre><code class="src src-c"><span style="color: #228b22;">module</span> <span style="color: #a0522d;">my_module</span> 1.0;
+
+require {
+  <span style="color: #228b22;">type</span> <span style="color: #a0522d;">unconfined_t</span>;
+  <span style="color: #228b22;">class</span> <span style="color: #a0522d;">process</span> { <span style="color: #228b22;">transition</span> <span style="color: #a0522d;">sigchld</span> };
+  <span style="color: #228b22;">class</span> <span style="color: #a0522d;">file</span> { <span style="color: #228b22;">read</span> <span style="color: #a0522d;">x_file_perms</span> };
+}
+
+<span style="color: #228b22;">type</span> <span style="color: #a0522d;">mytype_t</span>;
+<span style="color: #228b22;">type</span> <span style="color: #a0522d;">mytype_exec_t</span>;
+
+role unconfined_r <span style="color: #228b22;">types</span> <span style="color: #a0522d;">mytype_t</span>;
+
+type_transition <span style="color: #228b22;">unconfined_t</span> <span style="color: #a0522d;">mytype_exec_t</span> : process mytype_t;
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc2f24a6" class="outline-4">
+<h4 id="orgc2f24a6">Сбор&shy;ка и за&shy;груз&shy;ка</h4>
+<div class="outline-text-4" id="text-orgc2f24a6">
+<div class="org-src-container">
+<pre><code class="src src-sh">make &amp;&amp; make load
+</code></pre>
+</div>
+
+<p>
+Заг&shy;ру&shy;зить за&shy;но&shy;во по&shy;сле пе&shy;рес&shy;бор&shy;ки:
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-sh">make &amp;&amp; make reload
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org711518e" class="outline-4">
+<h4 id="org711518e">Про&shy;вер&shy;ка</h4>
+<div class="outline-text-4" id="text-org711518e">
+<div class="org-src-container">
+<pre><code class="src src-sh">cp /bin/date /root/test
+chcon -t mytype_exec_t /root/test
+setenforce 1
+/root/test 
+</code></pre>
+</div>
+
+<p>
+Сей&shy;час у би&shy;нар&shy;ни&shy;ка нет ни на что прав, по&shy;это&shy;му в по&shy;след&shy;ней строч&shy;ке
+дол&shy;жны по&shy;лу&shy;чить <code>/root/test: Permission denied</code>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5112a9b" class="outline-4">
+<h4 id="org5112a9b">Добав&shy;ле&shy;ние пра&shy;вил с по&shy;мощью <a id="org5241917"></a>audit2allow</h4>
+<div class="outline-text-4" id="text-org5112a9b">
+<p>
+Ути&shy;ли&shy;та пред&shy;на&shy;зна&shy;че&shy;на для ге&shy;не&shy;ра&shy;ции пра&shy;вил на ос&shy;но&shy;ве ло&shy;га <a href="#orge1e070e">ау&shy;ди&shy;та</a>.
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-sh">grep mytype /var/log/audit/audit.log | audit2allow -m mytype &gt;my_module.te
+</code></pre>
+</div>
+
+<p>
+Теперь мож&shy;но по&shy;пра&shy;вить мо&shy;дуль, за&shy;тем за&shy;но&shy;во его <a href="#orgc2f24a6">за&shy;гру&shy;зить</a>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org92d805f" class="outline-3">
+<h3 id="org92d805f">Полез&shy;ные пра&shy;ви&shy;ла</h3>
+<div class="outline-text-3" id="text-org92d805f">
+</div>
+<div id="outline-container-org895fa16" class="outline-4">
+<h4 id="org895fa16">Воз&shy;мож&shy;ность ме&shy;нять type об&shy;рат&shy;но</h4>
+<div class="outline-text-4" id="text-org895fa16">
+<p>
+По умо&shy;лча&shy;ни
+</p>
+
+<pre class="example">
+...
+require {
+...
+   class file { ... relabelfrom ... }
+}
+
+allow unconfined_t mytype_exec_t:file { ... relabelfrom ... }
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org4107b86" class="outline-4">
+<h4 id="org4107b86">Базо&shy;вые пра&shy;ви&shy;ла для за&shy;пус&shy;ка фа&shy;йла</h4>
+<div class="outline-text-4" id="text-org4107b86">
+<pre class="example">
+# доступ к /
+allow mytype_t root_t:dir search;
+
+# разрешить unconfined_t запускать mytype_exec_t
+allow unconfined_t mytype_exec_t:file { read getattr open execute };
+
+# разрешить unconfined_t работу с процессом
+allow unconfined_t mytype_t:process { siginh rlimitinh transition
+noatsecure };
+
+# разрешить unconfined_t менять контекст бинарника и переименовывать его
+allow unconfined_t mytype_exec_t:file { rename relabelfrom relabelto };
+allow mytype_exec_t fs_t:filesystem associate;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org071e70e" class="outline-3">
+<h3 id="org071e70e">При&shy;мер го&shy;то&shy;во&shy;го мо&shy;ду&shy;ля</h3>
+<div class="outline-text-3" id="text-org071e70e">
+<p>
+Разре&shy;шить би&shy;нар&shy;ни&shy;ку с type mytype_t до&shy;ступ толь&shy;ко к /tmp
+</p>
+
+<pre class="example">
+module mytype 1.0;
+
+require {
+        type unconfined_t;
+	type tmp_t;
+	type root_t;
+	type sshd_t;
+	type mytype_t;
+	type mytype_exec_t;
+	class dir { getattr append read write lock create rename link rmdir open search };
+	class file { read entrypoint getattr open execute rename relabelfrom relabelto };
+	class process { siginh transition sigchld noatsecure rlimitinh };
+	type user_devpts_t;
+	class chr_file { open read write getattr append ioctl };
+	class fd use;
+	class filesystem associate;
+}
+
+#============= mytype_t ==============
+
+# access to /
+allow mytype_t root_t:dir search;
+
+# access /tmp
+allow mytype_t tmp_t:dir { getattr append read write lock create rename link rmdir open search };
+
+# allow general context to run me
+allow unconfined_t mytype_exec_t:file { read getattr open execute };
+
+# allow general context to work with my process
+allow unconfined_t mytype_t:process { siginh rlimitinh transition noatsecure };
+
+# allow me to write to charcter device
+allow mytype_t user_devpts_t:chr_file { read write getattr append ioctl };
+
+# allow general context to switch into my context
+type_transition unconfined_t mytype_exec_t : process mytype_t;
+allow mytype_t mytype_exec_t:file entrypoint;
+
+# allow me to send SIGCHLD to parent
+allow mytype_t unconfined_t:process sigchld;
+
+# allow general context to change to/from my context
+allow unconfined_t mytype_exec_t:file { rename relabelfrom relabelto };
+
+
+## access to pty in SSH session ##
+allow mytype_t sshd_t:fd use;
+</pre>
+
+<p>
+При&shy;мер би&shy;нар&shy;ни&shy;ка для тес&shy;тов:
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-c"><span style="color: #483d8b;">#include</span> <span style="color: #8b2252;">&lt;stdio.h&gt;</span>
+<span style="color: #483d8b;">#include</span> <span style="color: #8b2252;">&lt;dirent.h&gt;</span>
+<span style="color: #483d8b;">#include</span> <span style="color: #8b2252;">&lt;errno.h&gt;</span>
+
+<span style="color: #228b22;">void</span> <span style="color: #0000ff;">ls</span> (<span style="color: #228b22;">char</span> *<span style="color: #a0522d;">dir</span>) {
+  printf(<span style="color: #8b2252;">"\nNow will list %s\n"</span>, dir);
+
+  <span style="color: #228b22;">DIR</span> *<span style="color: #a0522d;">dirp</span> = opendir(dir);
+  <span style="color: #a020f0;">if</span> (<span style="color: #008b8b;">NULL</span> == dirp) {
+    printf(<span style="color: #8b2252;">"Error opening dir %i\n"</span>, errno);
+  }
+
+  <span style="color: #a020f0;">struct</span> <span style="color: #228b22;">dirent</span> *<span style="color: #a0522d;">dp</span>;
+  errno = 0;
+  <span style="color: #a020f0;">while</span> (dirp) {
+    <span style="color: #a020f0;">if</span> ((dp = readdir(dirp)) != <span style="color: #008b8b;">NULL</span>) {
+      printf(<span style="color: #8b2252;">"%s\n"</span>, dp-&gt;d_name);
+    } <span style="color: #a020f0;">else</span> {
+      <span style="color: #a020f0;">if</span> (errno) {
+        printf(<span style="color: #8b2252;">"Error readding dir %i\n"</span>, errno);
+      }
+      <span style="color: #a020f0;">if</span> (closedir(dirp)) {
+        printf(<span style="color: #8b2252;">"Error closing dir %i\n"</span>, errno);
+      }
+      <span style="color: #a020f0;">return</span>;
+    }
+  }
+  <span style="color: #a020f0;">return</span>;
+}
+
+<span style="color: #228b22;">int</span> <span style="color: #0000ff;">main</span>() {
+  ls (<span style="color: #8b2252;">"/tmp"</span>);
+  ls (<span style="color: #8b2252;">"/etc"</span>);
+
+  <span style="color: #a020f0;">return</span> 0;
+}
+</code></pre>
+</div>
+
+<p>
+Соб&shy;ирать ко&shy;неч&shy;но на&shy;до ста&shy;ти&shy;ком:
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-sh">gcc -static a.c
+</code></pre>
+</div>
+
+<p>
+После это&shy;го не за&shy;быть по&shy;ме&shy;нять context:
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-sh">mv a.out /tmp
+chcon -t mytype_t /tmp/a.out
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org066156a" class="outline-3">
+<h3 id="org066156a">Пра&shy;ви&shy;ло для policy "minimum"</h3>
+<div class="outline-text-3" id="text-org066156a">
+<p>
+Если уста&shy;нов&shy;лен minimum, то не&shy;об&shy;хо&shy;ди&shy;мо всем поль&shy;зо&shy;ва&shy;те&shy;лям ро&shy;ли
+unconfined_r (а это в по&shy;ли&shy;ти&shy;ке minumum все поль&shy;зо&shy;ва&shy;те&shy;ли) до&shy;ступ к <a href="#org5d9435a">ти&shy;пу</a> mytype_t.
+</p>
+
+<pre class="example">
+role unconfined_r types mytype_t;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4bc0ff6" class="outline-2">
+<h2 id="org4bc0ff6">Огра&shy;ни&shy;че&shy;ние толь&shy;ко од&shy;но&shy;го би&shy;нар&shy;ни&shy;ка</h2>
+<div class="outline-text-2" id="text-org4bc0ff6">
+<ol class="org-ol">
+<li>Поста&shy;вить па&shy;кет <code>selinux-policy-minimum</code> (CentOS)</li>
+<li>Про&shy;пи&shy;сать этот policy в <code>/etc/selinux/config</code></li>
+<li>reboot (мо&shy;жет быть дол&shy;гим ес&shy;ли на&shy;чнет&shy;ся relabeling)</li>
+<li>Соз&shy;дать <a href="#org220cce7">мо&shy;дуль</a>, не за&shy;быть про <a href="#org066156a">Пра&shy;ви&shy;ло для policy "minimum"</a></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org24ea62f" class="outline-2">
+<h2 id="org24ea62f">Про&shy;чее</h2>
+<div class="outline-text-2" id="text-org24ea62f">
+</div>
+<div id="outline-container-orgee1e9f9" class="outline-3">
+<h3 id="orgee1e9f9">Рас&shy;прост&shy;ра&shy;не&shy;ние с мо&shy;ду&shy;лем кон&shy;текс&shy;тов фа&shy;йлов</h3>
+<div class="outline-text-3" id="text-orgee1e9f9">
+<p>
+В ди&shy;рек&shy;то&shy;рии с мо&shy;ду&shy;лем до&shy;ста&shy;точ&shy;но со&shy;здать файл ви&shy;да:
+</p>
+
+<pre class="example">
+/usr/lib64/libmagic.* --      system_u:object_r:image_magick_lib_t:s0
+...
+...
+</pre>
+
+<p>
+Он точ&shy;но так же со&shy;бе&shy;рет&shy;ся и бу&shy;дет уста&shy;нов&shy;лен с по&shy;мощью <code>make &amp;&amp; make reload</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org81923d9" class="outline-3">
+<h3 id="org81923d9">Обно&shy;вле&shy;ние кон&shy;текс&shy;тов фа&shy;йлов со&shy;глас&shy;но за&shy;гру&shy;жен&shy;ным пра&shy;ви&shy;лам</h3>
+<div class="outline-text-3" id="text-org81923d9">
+<p>
+Про&shy;ве&shy;рить что и как бу&shy;дет об&shy;но&shy;вле&shy;но:
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-sh">fixfiles check /usr/lib64/
+</code></pre>
+</div>
+
+<p>
+Обно&shy;вить:
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-sh">fixfiles relabel /usr/lib64/
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org135ab1b" class="outline-2">
+<h2 id="org135ab1b">Полез&shy;ные ссыл&shy;ки</h2>
+<div class="outline-text-2" id="text-org135ab1b">
+<ul class="org-ul">
+<li><a href="http://fedoraproject.org/wiki/PackagingDrafts/SELinux#Creating_new_types">Creating new types</a></li>
+<li><a href="https://selinuxproject.org/page/ObjectClassesPerms">ObjectClassesPerms</a></li>
+<li><a href="https://habrahabr.ru/post/332886/">Тем&shy;ные мо&shy;мен&shy;ты SELinux</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="Дата создания" class="post-info">2017-10-03</span>
+        <span title="Дата последнего изменения" class="post-info">2017-11-01</span>
+        <span title="Автор" class="post-info">Evgenii Lepikhin</span>
+      </div>
+      <span title="Тэги" class="post-info">Тэги: <a href="/tags/selinux/">SELinux</a>, <a href="/tags/безопасность/">безопасность</a>, <a href="/tags/linux/">linux</a>, <a href="/tags/администрирование/">администрирование</a></span>
+      <section>
+        <h1>Комментарии (выключены)</h1>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107728320-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-107728320-1');
+        </script>
+      <div class="footer">
+        <p>
+          Copyleft 2017 - ∞ <a href="mailto:e &lt;dot&gt; lepikhin &lt;at&gt; corp &lt;dot&gt; mail &lt;dot&gt; ru">Evgenii Lepikhin</a> (<a href="https://github.com/johnlepikhin">GitHub</a>)
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
