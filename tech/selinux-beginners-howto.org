@@ -346,6 +346,33 @@ role unconfined_r types mytype_t;
  3. reboot (может быть долгим если начнется relabeling)
  4. Создать [[Создание минимального модуля][модуль]], не забыть про [[Правило для policy "minimum"]]
 
+* Прочее
+** Распространение с модулем контекстов файлов
+
+В директории с модулем достаточно создать файл вида:
+
+#+BEGIN_EXAMPLE
+/usr/lib64/libmagic.* --      system_u:object_r:image_magick_lib_t:s0
+...
+...
+#+END_EXAMPLE
+
+Он точно так же соберется и будет установлен с помощью ~make && make reload~
+
+** Обновление контекстов файлов согласно загруженным правилам
+
+Проверить что и как будет обновлено:
+
+#+BEGIN_SRC sh
+fixfiles check /usr/lib64/
+#+END_SRC
+
+Обновить:
+
+#+BEGIN_SRC sh
+fixfiles relabel /usr/lib64/
+#+END_SRC
+
 * Полезные ссылки
 
 - [[http://fedoraproject.org/wiki/PackagingDrafts/SELinux#Creating_new_types][Creating new types]]
