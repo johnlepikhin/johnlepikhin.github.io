@@ -354,7 +354,7 @@ code-page=1251
 java -jar mkgmap.jar -c mkgmap-config.txt --description='Bezengi - my map' style-typ.txt *.osm
 #+end_src
 
-Откуда взялся ~style-typ.txt~ смотрите выше в [[*Сопоставление Garmin ID конкретной картинке][главе про TYP файлы]].
+Откуда взялся ~style-typ.txt~ смотрите выше в [[*Сопоставление Garmin ID конкретной картинке (TYP файл)][главе про TYP файлы]].
 
 В ~--description~ рекомендую дать своё описание карты — оно будет
 показано в меню выбора карты на приборе.
