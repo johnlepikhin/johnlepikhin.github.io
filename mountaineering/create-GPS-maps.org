@@ -295,7 +295,7 @@ org-документ остается простым текстовым файл
 посмотреть на примере моего [[https://raw.githubusercontent.com/johnlepikhin/garmin-styles-org/master/rogain/rogain.org][стиля для рогейнов]] (картинки лежат
 [[https://github.com/johnlepikhin/garmin-styles-org/tree/master/rogain/imgs][рядом]]). В Emacs это выглядит довольно прилично:
 
-[[file:images/orgmode-to-garmin-screenshot01.png][{{{img_center(Внешний вид получившегося документа в процессе работы над ним, ./images/orgmode-to-garmin-screenshot01.png]])}}}
+[[file:images/orgmode-to-garmin-screenshot01.png][{{{img_center(Внешний вид получившегося документа, ./images/orgmode-to-garmin-screenshot01.png]])}}}
 
 Для генерации конечных файлов написал Perl-[[https://github.com/johnlepikhin/org-to-garmin-style][скрипт]]. К сожалению, до
 следующего рисования карт нет никакой мотивации выводить его из
