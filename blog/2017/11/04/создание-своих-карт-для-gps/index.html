@@ -34,55 +34,56 @@
 <div class="post">
 <h1>Создание своих карт для GPS</h1>
 
-<div id="outline-container-org70304cd" class="outline-2">
-<h2 id="org70304cd">Пре&shy;дис&shy;ло&shy;вие</h2>
-<div class="outline-text-2" id="text-org70304cd">
+<div id="outline-container-org57b9fb9" class="outline-2">
+<h2 id="org57b9fb9">Пре&shy;дис&shy;ло&shy;вие</h2>
+<div class="outline-text-2" id="text-org57b9fb9">
 <p>
 В ра&shy;йо&shy;не 2005 го&shy;да друг на&shy;учил ме&shy;ня ри&shy;со&shy;вать кар&shy;ты для GPS. Тог&shy;да это
 был Боль&shy;шой-Боль&shy;шой Сек&shy;рет, по&shy;то&shy;му что ни&shy;ка&shy;ких OpenStreetMap не
-су&shy;щест&shy;во&shy;ва&shy;ло, Google Maps был толь&shy;ко в далёком про&shy;ек&shy;те, и лю&shy;ди на
-со&shy;зда&shy;нии ка&shy;рт для Garmin GPS стро&shy;или це&shy;лые биз&shy;не&shy;сы. Типич&shy;ный на&shy;бор
-со&shy;фта для со&shy;зда&shy;ния ка&shy;рт вы&shy;гля&shy;дел при&shy;мер&shy;но так<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>: MapInfo Pro,
-cgpsmapper, globalmapper, mapedit и чёрт зна&shy;ет что ещё. В ка&shy;чест&shy;ве
-ис&shy;точ&shy;ни&shy;ка дан&shy;ных ис&shy;поль&shy;зо&shy;вал&shy;ся на&shy;ло&shy;жен&shy;ный слой Геншта&shy;ба или дру&shy;гой
-со&shy;ветской кар&shy;ты, спут&shy;ни&shy;ко&shy;вые мно&shy;го&shy;ди&shy;апа&shy;зон&shy;ные сним&shy;ки LandSat (от&shy;лич&shy;ная
-шту&shy;ка, кс&shy;та&shy;ти) и дан&shy;ные вы&shy;сот из <a href="http://srtm.csi.cgiar.org/">SRTM</a>. С тех пор в IT сме&shy;ни&shy;лось
-не&shy;сколь&shy;ко эпох и ри&shy;со&shy;ва&shy;ние ка&shy;рт ста&shy;ло де&shy;ятель&shy;ностью, до&shy;ступ&shy;ной
-прак&shy;ти&shy;чес&shy;ки каж&shy;до&shy;му, «без ре&shy;гис&shy;тра&shy;ции и SMS».
+су&shy;щест&shy;во&shy;ва&shy;ло, Google Maps был в далёком про&shy;ек&shy;те, а лю&shy;ди на со&shy;зда&shy;нии
+ка&shy;рт для Garmin GPS стро&shy;или це&shy;лые биз&shy;не&shy;сы. Типич&shy;ный на&shy;бор со&shy;фта для
+со&shy;зда&shy;ния ка&shy;рт вы&shy;гля&shy;дел при&shy;мер&shy;но так<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>: MapInfo Pro, cgpsmapper,
+globalmapper, mapedit и чёрт зна&shy;ет что ещё. В ка&shy;чест&shy;ве ис&shy;точ&shy;ни&shy;ка
+дан&shy;ных ис&shy;поль&shy;зо&shy;вал&shy;ся на&shy;ло&shy;жен&shy;ный слой Геншта&shy;ба или дру&shy;гой со&shy;ветской
+кар&shy;ты, спут&shy;ни&shy;ко&shy;вые мно&shy;го&shy;ди&shy;апа&shy;зон&shy;ные сним&shy;ки LandSat (от&shy;лич&shy;ная шту&shy;ка,
+кс&shy;та&shy;ти) и дан&shy;ные вы&shy;сот из <a href="http://srtm.csi.cgiar.org/">SRTM</a>. С тех пор в IT сме&shy;ни&shy;лось не&shy;сколь&shy;ко
+эпох и ри&shy;со&shy;ва&shy;ние ка&shy;рт ста&shy;ло де&shy;ятель&shy;ностью, до&shy;ступ&shy;ной прак&shy;ти&shy;чес&shy;ки
+каж&shy;до&shy;му, «без ре&shy;гис&shy;тра&shy;ции и SMS».
 </p>
 
 <p>
 Две не&shy;де&shy;ли на&shy;зад имел со&shy;мни&shy;тель&shy;ное удо&shy;вольст&shy;вие ри&shy;со&shy;вать кар&shy;ту для <a href="http://mmb.progressor.ru/?RaidId=30">ММБ
 2017/осень</a>. Решил на&shy;пи&shy;сать эту статью по&shy;сколь&shy;ку про&shy;цесс по-преж&shy;не&shy;му
-да&shy;лек от дру&shy;жест&shy;вен&shy;нос&shy;ти поль&shy;зо&shy;ва&shy;те&shy;лю.
+далёк от дру&shy;жест&shy;вен&shy;нос&shy;ти поль&shy;зо&shy;ва&shy;те&shy;лю.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org63f9ec0" class="outline-2">
-<h2 id="org63f9ec0">Общий план</h2>
-<div class="outline-text-2" id="text-org63f9ec0">
+<div id="outline-container-orga3180f6" class="outline-2">
+<h2 id="orga3180f6">Общий план</h2>
+<div class="outline-text-2" id="text-orga3180f6">
 <p>
 Сей&shy;час за ос&shy;но&shy;ву при&shy;ня&shy;то брать го&shy;то&shy;вый век&shy;тор из <a href="http://openstreetmap.org">OSM</a>. Спо&shy;со&shy;бов
-ска&shy;чи&shy;ва&shy;ния кус&shy;ка кар&shy;ты на&shy;пи&shy;са&shy;но в их <a href="https://wiki.openstreetmap.org/wiki/downloading_data">ви&shy;ки</a> до&shy;воль&shy;но мно&shy;го. Даль&shy;ней&shy;ший
-план:
+ска&shy;чи&shy;ва&shy;ния кус&shy;ка кар&shy;ты опи&shy;са&shy;но в их <a href="https://wiki.openstreetmap.org/wiki/downloading_data">ви&shy;ки</a> до&shy;воль&shy;но мно&shy;го. Кар&shy;та
+по&shy;лу&shy;че&shy;на, те&shy;перь на&shy;до:
 </p>
 
 <ol class="org-ol">
 <li>Нари&shy;со&shy;вать свои де&shy;та&shy;ли</li>
-<li>Доба&shy;вить дан&shy;ные SRTM<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>.</li>
-<li>Соз&shy;дать стиль от&shy;ри&shy;со&shy;вки эле&shy;мен&shy;тов кар&shy;ты на при&shy;бо&shy;ре Garmin</li>
+<li>Доба&shy;вить дан&shy;ные SRTM<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup></li>
+<li>Соз&shy;дать стиль от&shy;ри&shy;со&shy;вки эле&shy;мен&shy;тов кар&shy;ты на при&shy;бо&shy;ре Garmin (лес
+бу&shy;дет ото&shy;бра&shy;жать&shy;ся ёлоч&shy;ка&shy;ми, по&shy;ле тра&shy;ви&shy;нка&shy;ми т.д.)</li>
 <li>Ском&shy;по&shy;но&shy;вать кар&shy;ту</li>
 <li>Залить на при&shy;бор</li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-org23f6b6c" class="outline-2">
-<h2 id="org23f6b6c">Рис&shy;ова&shy;ние</h2>
-<div class="outline-text-2" id="text-org23f6b6c">
+<div id="outline-container-org98e748a" class="outline-2">
+<h2 id="org98e748a">Рис&shy;ова&shy;ние</h2>
+<div class="outline-text-2" id="text-org98e748a">
 <p>
-Тут всё прос&shy;то, вы&shy;би&shy;ра&shy;ем лю&shy;бой по&shy;нра&shy;вив&shy;ший&shy;ся ре&shy;дак&shy;тор OSM и ри&shy;су&shy;ем. Я
+Тут всё прос&shy;то: вы&shy;би&shy;ра&shy;ем лю&shy;бой по&shy;нра&shy;вив&shy;ший&shy;ся ре&shy;дак&shy;тор OSM и ри&shy;су&shy;ем. Я
 оста&shy;но&shy;вил&shy;ся на <a href="https://josm.openstreetmap.de/">josm</a>. Важ&shy;но вы&shy;брать ка&shy;кую-ни&shy;будь хо&shy;ро&shy;шую под&shy;ло&shy;жку. К
 со&shy;жа&shy;ле&shy;нию, Yandex.Кар&shy;ты или Google Maps ис&shy;поль&shy;зо&shy;вать нель&shy;зя из-за
 ли&shy;цензион&shy;ных ог&shy;ра&shy;ни&shy;че&shy;ний. Но есть мно&shy;го не&shy;пло&shy;хих аль&shy;тер&shy;на&shy;тив,
@@ -90,7 +91,7 @@ cgpsmapper, globalmapper, mapedit и чёрт зна&shy;ет что ещё. В 
 </p>
 
 <p>
-В OSM все об&shy;ъек&shy;ты име&shy;ют на&shy;бор ат&shy;ри&shy;бу&shy;тов в ви&shy;де <code>ключ=значение</code>. Таких
+В OSM все об&shy;ъек&shy;ты име&shy;ют на&shy;бор ат&shy;ри&shy;бу&shy;тов ви&shy;да <code>ключ=значение</code>. Таких
 ат&shy;ри&shy;бу&shy;тов у об&shy;ъек&shy;та мо&shy;жет быть от ну&shy;ля до бес&shy;ко&shy;неч&shy;нос&shy;ти. По ним
 даль&shy;ней&shy;шие ути&shy;ли&shy;ты по&shy;йм&shy;ут что вы им&shy;ели вви&shy;ду, на&shy;ри&shy;со&shy;вав вон тот
 боль&shy;шой мно&shy;гоу&shy;голь&shy;ник. По боль&shy;шо&shy;му счёту, их мож&shy;но вы&shy;став&shy;лять лю&shy;бы&shy;ми,
@@ -101,11 +102,11 @@ cgpsmapper, globalmapper, mapedit и чёрт зна&shy;ет что ещё. В 
 </div>
 </div>
 
-<div id="outline-container-org94506cf" class="outline-2">
-<h2 id="org94506cf">Добав&shy;ле&shy;ние дан&shy;ных вы&shy;сот</h2>
-<div class="outline-text-2" id="text-org94506cf">
+<div id="outline-container-orga078e3c" class="outline-2">
+<h2 id="orga078e3c">Добав&shy;ле&shy;ние дан&shy;ных вы&shy;сот</h2>
+<div class="outline-text-2" id="text-orga078e3c">
 <p>
-Тут про&shy;ще все&shy;го вос&shy;поль&shy;зо&shy;вать&shy;ся Windows ути&shy;ли&shy;той <a href="http://wiki.openstreetmap.org/wiki/Srtm2Osm#Download">Srtm2osm</a>. Она возьмёт
+Про&shy;ще все&shy;го вос&shy;поль&shy;зо&shy;вать&shy;ся Windows ути&shy;ли&shy;той <a href="http://wiki.openstreetmap.org/wiki/Srtm2Osm#Download">Srtm2osm</a>. Она возьмёт
 за&shy;дан&shy;ную URL'ом об&shy;ласть из OSM, ска&shy;ча&shy;ет для неё дан&shy;ные SRTM, са&shy;ма
 пре&shy;об&shy;ра&shy;зу&shy;ет их в фор&shy;мат OSM.
 </p>
@@ -124,9 +125,9 @@ cgpsmapper, globalmapper, mapedit и чёрт зна&shy;ет что ещё. В 
 </p>
 <ul class="org-ul">
 <li>URL ско&shy;пи&shy;ро&shy;ван из бра&shy;узе&shy;ра и по&shy;ка&shy;зы&shy;ва&shy;ет ку&shy;сок, для ко&shy;то&shy;ро&shy;го
-хо&shy;те&shy;лось бы по&shy;лу&shy;чить ли&shy;нии вы&shy;сот.</li>
+хо&shy;те&shy;лось бы по&shy;лу&shy;чить ли&shy;нии вы&shy;сот</li>
 <li><code>-cat 600 200</code> шаг в мет&shy;рах вы&shy;со&shy;ты для ма&shy;жор&shy;ных и сред&shy;них ли&shy;ний
-вы&shy;сот.</li>
+вы&shy;сот</li>
 <li><code>-step 40</code> шаг в мет&shy;рах вы&shy;со&shy;ты для ми&shy;нор&shy;ных ли&shy;ний вы&shy;сот.</li>
 </ul>
 
@@ -136,14 +137,14 @@ cgpsmapper, globalmapper, mapedit и чёрт зна&shy;ет что ещё. В 
 </div>
 </div>
 
-<div id="outline-container-org13bea90" class="outline-2">
-<h2 id="org13bea90">Сти&shy;ли кар&shy;ты</h2>
-<div class="outline-text-2" id="text-org13bea90">
+<div id="outline-container-org43077ec" class="outline-2">
+<h2 id="org43077ec">Сти&shy;ли кар&shy;ты</h2>
+<div class="outline-text-2" id="text-org43077ec">
 <p>
-Новая для ме&shy;ня те&shy;ма и од&shy;но&shy;вре&shy;мен&shy;но боль&shy;шое при&shy;ят&shy;ное от&shy;кры&shy;тие, что это
-ока&shy;зы&shy;ва&shy;ет&shy;ся воз&shy;мож&shy;но! Это ра&shy;ди&shy;каль&shy;но улуч&shy;ша&shy;ет чи&shy;та&shy;емость кар&shy;ты. И я бы
-ска&shy;зал, что на по&shy;след&shy;нем ММБ нор&shy;маль&shy;но от&shy;ри&shy;со&shy;ван&shy;ный стиль дал боль&shy;ше,
-чем весь мой вклад не&shy;по&shy;средст&shy;вен&shy;но в кар&shy;то&shy;гра&shy;фию ра&shy;йо&shy;на.
+Новая для ме&shy;ня те&shy;ма и од&shy;но&shy;вре&shy;мен&shy;но боль&shy;шое при&shy;ят&shy;ное от&shy;кры&shy;тие: сти&shy;ли по
+умо&shy;лча&shy;нию у мо&shy;его Garmin ужас&shy;ны! Нор&shy;маль&shy;ный стиль ра&shy;ди&shy;каль&shy;но улуч&shy;ша&shy;ет
+чи&shy;та&shy;емость кар&shy;ты. И я бы ска&shy;зал, что на по&shy;след&shy;нем ММБ мой стиль дал
+боль&shy;ше, чем весь вклад не&shy;по&shy;средст&shy;вен&shy;но в кар&shy;то&shy;гра&shy;фи&shy;ро&shy;ва&shy;ние ра&shy;йо&shy;на.
 </p>
 
 <p>
@@ -165,16 +166,15 @@ cgpsmapper, globalmapper, mapedit и чёрт зна&shy;ет что ещё. В 
 </div>
 </div>
 
-<div id="outline-container-orgb77e3ea" class="outline-3">
-<h3 id="orgb77e3ea">Как это ра&shy;бо&shy;та&shy;ет</h3>
-<div class="outline-text-3" id="text-orgb77e3ea">
+<div id="outline-container-org6ea2943" class="outline-3">
+<h3 id="org6ea2943">Как это ра&shy;бо&shy;та&shy;ет</h3>
+<div class="outline-text-3" id="text-org6ea2943">
 <p>
 С од&shy;но&shy;го кон&shy;ца у нас OSM-кар&shy;та, где у всех об&shy;ъек&shy;тов есть ат&shy;ри&shy;бу&shy;ты, я
-пи&shy;сал о них <a href="#org23f6b6c">вы&shy;ше</a>. С дру&shy;го&shy;го кон&shy;ца имеем бу&shy;ду&shy;щую кар&shy;ту для Garmin в
+пи&shy;сал о них <a href="#org98e748a">вы&shy;ше</a>. С дру&shy;го&shy;го кон&shy;ца имеем бу&shy;ду&shy;щую кар&shy;ту для Garmin в
 фор&shy;ма&shy;те IMG, где есть свои ID ти&shy;пов об&shy;ъек&shy;тов. При&shy;чем, ес&shy;ли
-иден&shy;ти&shy;фи&shy;ка&shy;то&shy;ры ти&shy;пов ли&shy;ний и по&shy;ли&shy;го&shy;нов на не&shy;ко&shy;то&shy;рых при&shy;бо&shy;рах су&shy;дя по
-все&shy;му мож&shy;но за&shy;да&shy;вать свои, то для то&shy;чек, су&shy;дя по все&shy;му, ID дол&shy;жны быть
-как за&shy;ве&shy;щал Garmin. Их при&shy;мер&shy;ный <a href="http://wiki.openstreetmap.org/wiki/GroundTruth_Standard_Garmin_Types">спи&shy;сок</a>.
+иден&shy;ти&shy;фи&shy;ка&shy;то&shy;ры ти&shy;пов ли&shy;ний и по&shy;ли&shy;го&shy;нов на не&shy;ко&shy;то&shy;рых при&shy;бо&shy;рах мож&shy;но
+за&shy;да&shy;вать свои, то для то&shy;чек ID дол&shy;жны быть как за&shy;ве&shy;щал Garmin<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>. Их при&shy;мер&shy;ный <a href="http://wiki.openstreetmap.org/wiki/GroundTruth_Standard_Garmin_Types">спи&shy;сок</a>.
 </p>
 
 <p>
@@ -182,19 +182,19 @@ cgpsmapper, globalmapper, mapedit и чёрт зна&shy;ет что ещё. В 
 </p>
 <ol class="org-ol">
 <li>Сопо&shy;ста&shy;вить по ка&shy;ким-то пра&shy;ви&shy;лам ат&shy;ри&shy;бу&shy;ты об&shy;ъек&shy;тов в OSM с ID
-ти&shy;пов в Garmin.</li>
+ти&shy;пов в Garmin</li>
 <li>Нари&shy;со&shy;вать для них кар&shy;тин&shy;ки.</li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-org4f46c70" class="outline-3">
-<h3 id="org4f46c70">Рис&shy;ова&shy;ние кар&shy;ти&shy;нок</h3>
-<div class="outline-text-3" id="text-org4f46c70">
+<div id="outline-container-org285583c" class="outline-3">
+<h3 id="org285583c">Рис&shy;ова&shy;ние кар&shy;ти&shy;нок</h3>
+<div class="outline-text-3" id="text-org285583c">
 <p>
 Нач&shy;ну во вто&shy;ро&shy;го пунк&shy;та про&shy;грам&shy;мы т.к. без не&shy;го не&shy;воз&shy;мо&shy;жен
 пер&shy;вый. Кар&shy;тин&shy;ки — по су&shy;ти битма&shy;пы — име&shy;ют фор&shy;мат 32xN пик&shy;се&shy;лей (N от
-1 до 32) и два цве&shy;та<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>, один из ко&shy;то&shy;рых мо&shy;жет быть
+1 до 32) и два цве&shy;та<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>, один из ко&shy;то&shy;рых мо&shy;жет быть
 про&shy;зрач&shy;ным. Фор&shy;мат хра&shy;не&shy;ния <a href="https://ru.wikipedia.org/wiki/X_Pixmap">XPM</a> (тут все фо&shy;тошо&shy;пе&shy;ры по&shy;перх&shy;ну&shy;лись
 сму&shy;зи, а про&shy;грам&shy;мис&shy;ты на ANSI C ехид&shy;но потёрли ру&shy;ки). Я ри&shy;со&shy;вал их в
 Gimp. Важ&shy;но про&shy;ве&shy;рить по&shy;сле со&shy;хра&shy;не&shy;ния, что цве&shy;тов по&shy;лу&shy;чи&shy;лось им&shy;ен&shy;но
@@ -202,20 +202,18 @@ Gimp. Важ&shy;но про&shy;ве&shy;рить по&shy;сле со&shy;хр
 </p>
 
 <p>
-Отдель&shy;но про ли&shy;нии. Лин&shy;ии ре&shy;ко&shy;мен&shy;дую ри&shy;со&shy;вать тол&shy;щи&shy;ной[fn::В кон&shy;тек&shy;сте
-кар&shy;тин&shy;ки пра&shy;виль&shy;нее ска&shy;зать, что у ли&shy;ний на кар&shy;те есть не тол&shy;щи&shy;на, а
-вы&shy;со&shy;та, по&shy;сколь&shy;ку ши&shy;ри&shy;на кар&shy;тин&shy;ки у нас вс&shy;ег&shy;да 32 пик&shy;се&shy;ля) от 3
+Отдель&shy;но про ли&shy;нии. Лин&shy;ии ре&shy;ко&shy;мен&shy;дую ри&shy;со&shy;вать тол&shy;щи&shy;ной<sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup> от 3
 пик&shy;се&shy;лей и ши&shy;ре: ина&shy;че не смот&shy;рят&shy;ся.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgf41aa59" class="outline-3">
-<h3 id="orgf41aa59">Сопо&shy;став&shy;ле&shy;ние ат&shy;ри&shy;бу&shy;тов OSM иден&shy;ти&shy;фи&shy;ка&shy;то&shy;рам в Garmin</h3>
-<div class="outline-text-3" id="text-orgf41aa59">
+<div id="outline-container-org231bf02" class="outline-3">
+<h3 id="org231bf02">Сопо&shy;став&shy;ле&shy;ние ат&shy;ри&shy;бу&shy;тов OSM иден&shy;ти&shy;фи&shy;ка&shy;то&shy;рам в Garmin</h3>
+<div class="outline-text-3" id="text-org231bf02">
 <p>
 Вы мо&shy;же&shy;те вос&shy;поль&shy;зо&shy;вать&shy;ся го&shy;то&shy;вым со&shy;фтом для Windows для ри&shy;со&shy;ва&shy;ния
-сти&shy;лей ка&shy;рт для Garmin<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>. Но он мне по&shy;ка&shy;зал&shy;ся мяг&shy;ко го&shy;во&shy;ря убо&shy;гим —
+сти&shy;лей ка&shy;рт для Garmin<sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup>. Но он мне по&shy;ка&shy;зал&shy;ся мяг&shy;ко го&shy;во&shy;ря убо&shy;гим —
 на&shy;чи&shy;ная с то&shy;го, что они пред&shy;ла&shy;га&shy;ют все кар&shy;тин&shy;ки ри&shy;со&shy;вать в своём
 вст&shy;ро&shy;ен&shy;ном ре&shy;дак&shy;то&shy;ре.
 </p>
@@ -237,8 +235,9 @@ version
 </p>
 
 <p>
-Здесь version со&shy;дер&shy;жит прос&shy;то ци&shy;фер&shy;ку, а <code>lines</code>, <code>points</code> и
-<code>polygons</code> опи&shy;сы&shy;ва&shy;ют пра&shy;ви&shy;ла пре&shy;об&shy;ра&shy;зо&shy;ва&shy;ния. Пра&shy;ви&shy;ла вы&shy;гля&shy;дят так:
+Это и есть «стиль», на&shy;бор пра&shy;вил. Здесь version со&shy;дер&shy;жит прос&shy;то
+ци&shy;фер&shy;ку, а <code>lines</code>, <code>points</code> и <code>polygons</code> опи&shy;сы&shy;ва&shy;ют пра&shy;ви&shy;ла
+пре&shy;об&shy;ра&shy;зо&shy;ва&shy;ния. Они вы&shy;гля&shy;дят так:
 </p>
 
 <pre class="example">
@@ -246,6 +245,13 @@ version
 landuse=industrial [0xb resolution 18]
 landuse=quarry [0xc resolution 18]
 </pre>
+
+<p>
+Опи&shy;сы&shy;ваю пер&shy;вую строч&shy;ку че&shy;ло&shy;ве&shy;чес&shy;ким язы&shy;ком: «ес&shy;ли есть ат&shy;ри&shy;бут
+<code>landuse=farmland</code> ИЛИ есть ат&shy;ри&shy;бут <code>landuse=farmyard</code>, ТО вы&shy;ста&shy;вить
+для об&shy;ъек&shy;та Garmin иден&shy;ти&shy;фи&shy;ка&shy;тор 0xa, а об&shy;ъект на&shy;чать по&shy;ка&shy;зы&shy;вать
+на&shy;чи&shy;ная с масшта&shy;ба 18».
+</p>
 
 <p>
 На са&shy;мом де&shy;ле, вы&shy;бор сти&shy;ля для об&shy;ъек&shy;та — боль&shy;шая и очень боль&shy;ная те&shy;ма
@@ -271,15 +277,16 @@ grep+map+fold.
 </div>
 </div>
 
-<div id="outline-container-org9cb45a7" class="outline-3">
-<h3 id="org9cb45a7">Сопо&shy;став&shy;ле&shy;ние Garmin ID кон&shy;крет&shy;ной кар&shy;тин&shy;ке (TYP файл)</h3>
-<div class="outline-text-3" id="text-org9cb45a7">
+<div id="outline-container-org561f304" class="outline-3">
+<h3 id="org561f304">Сопо&shy;став&shy;ле&shy;ние Garmin ID кон&shy;крет&shy;ной кар&shy;тин&shy;ке (TYP файл)</h3>
+<div class="outline-text-3" id="text-org561f304">
 <p>
 Недав&shy;но мы на&shy;ри&shy;со&shy;ва&shy;ли ку&shy;чу офи&shy;ген&shy;ных кар&shy;ти&shy;нок чу&shy;мо&shy;вом фор&shy;ма&shy;те XPM. И
 мы не мо&shy;жем до&shy;ждать&shy;ся мо&shy;мен&shy;та, ко&shy;гда эти ма&shy;лень&shy;кие Моны и Лизы
-раз&shy;ме&shy;ром 32 на 32 со&shy;хранённые в ви&shy;де Цэ ис&shy;ход&shy;ни&shy;ков по&shy;явят&shy;ся на эк&shy;ра&shy;не
-Garmin. Необ&shy;хо&shy;ди&shy;мо со&shy;по&shy;ста&shy;вить их ID ти&shy;пов в Garmin. Откры&shy;ва&shy;ем
-текс&shy;то&shy;вый ре&shy;дак&shy;тор и со&shy;зд&shy;аем файл <code>style-typ.txt</code>:
+раз&shy;ме&shy;ром 32 на 32, со&shy;хранённые в ви&shy;де Цэ ис&shy;ход&shy;ни&shy;ков, по&shy;явят&shy;ся на
+эк&shy;ра&shy;не Garmin. Необ&shy;хо&shy;ди&shy;мо со&shy;по&shy;ста&shy;вить ID ти&shy;пов Garmin с
+кар&shy;тин&shy;ка&shy;ми. Откры&shy;ва&shy;ем текс&shy;то&shy;вый ре&shy;дак&shy;тор и со&shy;зд&shy;аем файл
+<code>style-typ.txt</code>:
 </p>
 
 <div class="org-src-container">
@@ -388,17 +395,19 @@ end]
 </ul>
 
 <p>
-Ура, стиль го&shy;тов! В раз&shy;де&shy;ле <a href="#org9dcae5e">Ком&shy;по&shy;нов&shy;ка ка&shy;рт в ито&shy;го&shy;вый файл</a> вы
-узнае&shy;те, как те&shy;перь эту шат&shy;кую кон&shy;ст&shy;рук&shy;цию мож&shy;но пре&shy;об&shy;ра&shy;зо&shy;вать в
-кар&shy;ту, а в ни&shy;жес&shy;ле&shy;ду&shy;ющем раз&shy;де&shy;ле узнае&shy;те, как я по&shy;пы&shy;тал&shy;ся от это&shy;го ада
-из&shy;ба&shy;вить&shy;ся с по&shy;мощью Emacs и чуть-чуть Perl.
+Ура, стиль го&shy;тов! Этот txt файл бу&shy;дет ско&shy;пи&shy;ли&shy;ро&shy;ван в <code>TYP</code> файл,
+ко&shy;то&shy;рый по&shy;ни&shy;ма&shy;ет Garmin, ко&shy;то&shy;рый в свою оче&shy;редь бу&shy;дет вком&shy;пи&shy;ли&shy;ро&shy;ван в
+ко&shy;неч&shy;ную кар&shy;ту. В раз&shy;де&shy;ле <a href="#org868db13">Ком&shy;по&shy;нов&shy;ка ка&shy;рт в ито&shy;го&shy;вый файл</a> вы узнае&shy;те,
+как эту шат&shy;кую кон&shy;ст&shy;рук&shy;цию пре&shy;об&shy;ра&shy;зо&shy;вать в кар&shy;ту, а в ни&shy;жес&shy;ле&shy;ду&shy;ющем
+раз&shy;де&shy;ле узнае&shy;те, как я по&shy;пы&shy;тал&shy;ся от это&shy;го ада из&shy;ба&shy;вить&shy;ся с по&shy;мощью
+Emacs и чуть-чуть Perl.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge3ff95e" class="outline-3">
-<h3 id="orge3ff95e">Наво&shy;дим по&shy;ря&shy;док в сти&shy;ле</h3>
-<div class="outline-text-3" id="text-orge3ff95e">
+<div id="outline-container-org05c6597" class="outline-3">
+<h3 id="org05c6597">Наво&shy;дим по&shy;ря&shy;док в сти&shy;лях с по&shy;мощью Emacs</h3>
+<div class="outline-text-3" id="text-org05c6597">
 <p>
 В <a href="https://ru.wikipedia.org/wiki/Emacs">Емак&shy;се</a> есть та&shy;кой за&shy;ме&shy;ча&shy;тель&shy;ный ре&shy;жим — <a href="http://orgmode.org/">org-mode</a>. Веро&shy;ят&shy;но
 перво&shy;на&shy;чаль&shy;но он со&shy;зда&shy;вал&shy;ся для ор&shy;га&shy;ни&shy;за&shy;ции за&shy;кла&shy;док и за&shy;пи&shy;сок, но
@@ -411,6 +420,15 @@ org-до&shy;ку&shy;мент ос&shy;та&shy;ет&shy;ся про&shy;сты
 по&shy;ка&shy;зы&shy;вать кар&shy;тин&shy;ки пря&shy;мо в тек&shy;сте.
 </p>
 
+<div class="img_right">
+
+<div class="figure">
+<p><a href="/assets/blog/2017/11/04/создание-своих-карт-для-gps/garmin-typ-my-style-rogain.png"><img src="/assets/blog/2017/11/04/создание-своих-карт-для-gps/garmin-typ-my-style-rogain.png" alt="garmin-typ-my-style-rogain.png" /></a>
+</p>
+<p><span class="figure-number">&#1056;&#1080;&#1089;. 2.: </span>Резуль&shy;тат мо&shy;их ху&shy;до&shy;жеств: стиль для ро&shy;гей&shy;нов</p>
+</div>
+
+</div>
 <p>
 Я не смог не вос&shy;поль&shy;зо&shy;вать&shy;ся та&shy;кой за&shy;ме&shy;ча&shy;тель&shy;ной воз&shy;мож&shy;ностью и ре&shy;шил
 со&shy;став&shy;лять свой пер&shy;вый стиль в фор&shy;ма&shy;те org. Как это вы&shy;гля&shy;дит, мо&shy;же&shy;те
@@ -423,7 +441,7 @@ org-до&shy;ку&shy;мент ос&shy;та&shy;ет&shy;ся про&shy;сты
 <div class="figure">
 <p><a href="/assets/blog/2017/11/04/создание-своих-карт-для-gps/orgmode-to-garmin-screenshot01.png"><img src="/assets/blog/2017/11/04/создание-своих-карт-для-gps/orgmode-to-garmin-screenshot01.png" alt="orgmode-to-garmin-screenshot01.png" /></a>
 </p>
-<p><span class="figure-number">&#1056;&#1080;&#1089;. 2.: </span>Вне&shy;шний вид по&shy;лу&shy;чив&shy;ше&shy;го&shy;ся до&shy;ку&shy;мен&shy;та</p>
+<p><span class="figure-number">&#1056;&#1080;&#1089;. 3.: </span>Вне&shy;шний вид по&shy;лу&shy;чив&shy;ше&shy;го&shy;ся до&shy;ку&shy;мен&shy;та</p>
 </div>
 
 </div>
@@ -442,9 +460,9 @@ polygons, lines, points, mkgmap-config.txt и style-typ.txt, ука&shy;зы&shy
 </div>
 </div>
 
-<div id="outline-container-org6fa9bb5" class="outline-3">
-<h3 id="org6fa9bb5">Полез&shy;ные ссыл&shy;ки по гла&shy;ве (боль&shy;ше мне для изу&shy;че&shy;ния)</h3>
-<div class="outline-text-3" id="text-org6fa9bb5">
+<div id="outline-container-orgd24c223" class="outline-3">
+<h3 id="orgd24c223">Полез&shy;ные ссыл&shy;ки по гла&shy;ве (боль&shy;ше мне для изу&shy;че&shy;ния)</h3>
+<div class="outline-text-3" id="text-orgd24c223">
 <ul class="org-ul">
 <li><a href="http://www.pinns.co.uk/osm/docs/garmincolors.pdf">Garmin Colour Palette & XPM</a></li>
 <li><a href="http://www.pinns.co.uk/osm/docs/multicolored.pdf">Multi Coloured Polygons on Garmin devices/maps</a></li>
@@ -453,9 +471,9 @@ polygons, lines, points, mkgmap-config.txt и style-typ.txt, ука&shy;зы&shy
 </div>
 </div>
 
-<div id="outline-container-org9dcae5e" class="outline-2">
-<h2 id="org9dcae5e">Ком&shy;по&shy;нов&shy;ка ка&shy;рт в ито&shy;го&shy;вый файл</h2>
-<div class="outline-text-2" id="text-org9dcae5e">
+<div id="outline-container-org868db13" class="outline-2">
+<h2 id="org868db13">Ком&shy;по&shy;нов&shy;ка ка&shy;рт в ито&shy;го&shy;вый файл</h2>
+<div class="outline-text-2" id="text-org868db13">
 <p>
 Для это&shy;го нам по&shy;на&shy;до&shy;бит&shy;ся <a href="http://www.mkgmap.org.uk/">mkgmap</a> — ути&shy;ли&shy;та, уме&shy;ющая на са&shy;мом де&shy;ле
 до&shy;воль&shy;но мно&shy;го ин&shy;те&shy;рес&shy;ных штук, но глав&shy;ное спо&shy;соб&shy;ная пре&shy;об&shy;ра&shy;зо&shy;вать OSM
@@ -492,7 +510,7 @@ code-page=1251
 </pre>
 
 <p>
-Здесь <code>style-file</code> — это путь до <span class="underline">ди&shy;рек&shy;то&shy;рии</span> с <a href="#orgf41aa59">пра&shy;ви&shy;ла&shy;ми пре&shy;об&shy;ра&shy;зо&shy;ва&shy;ния
+Здесь <code>style-file</code> — это путь до <span class="underline">ди&shy;рек&shy;то&shy;рии</span> с <a href="#org231bf02">пра&shy;ви&shy;ла&shy;ми пре&shy;об&shy;ра&shy;зо&shy;ва&shy;ния
 сти&shy;ля</a>.
 </p>
 
@@ -506,7 +524,7 @@ code-page=1251
 </div>
 
 <p>
-Отку&shy;да взял&shy;ся <code>style-typ.txt</code> смот&shy;ри&shy;те вы&shy;ше в <a href="#org9cb45a7">гла&shy;ве про TYP фа&shy;йлы</a>.
+Отку&shy;да взял&shy;ся <code>style-typ.txt</code> смот&shy;ри&shy;те вы&shy;ше в <a href="#org561f304">гла&shy;ве про TYP фа&shy;йлы</a>.
 </p>
 
 <p>
@@ -522,9 +540,9 @@ code-page=1251
 </p>
 </div>
 
-<div id="outline-container-orgcf13323" class="outline-3">
-<h3 id="orgcf13323">splitter</h3>
-<div class="outline-text-3" id="text-orgcf13323">
+<div id="outline-container-orgeb18be7" class="outline-3">
+<h3 id="orgeb18be7">splitter</h3>
+<div class="outline-text-3" id="text-orgeb18be7">
 <p>
 Для ста&shy;рых при&shy;бо&shy;ров так&shy;же имеет смысл по&shy;де&shy;лить кар&shy;тин&shy;ку на ло&shy;ги&shy;чес&shy;кие
 квад&shy;ра&shy;ты, ра&shy;бо&shy;тать кар&shy;та бу&shy;дет быстрее. Это мож&shy;но сде&shy;лать с по&shy;мощью
@@ -551,6 +569,11 @@ code-page=1251
 маршру&shy;тов и от&shy;ри&shy;со&shy;вкой, за&shy;то очень боль&shy;шие об&shy;ъек&shy;ты не до&shy;ба&shy;вят
 тор&shy;мо&shy;зов.</li>
 </ul>
+
+<p>
+Splitter со&shy;зда&shy;ет фа&shy;йлы с рас&shy;ши&shy;ре&shy;ни&shy;ем PBF, ко&shy;то&shy;рые mkgmap то&shy;же уме&shy;ет
+при&shy;ни&shy;мать в на вход.
+</p>
 </div>
 </div>
 </div>
@@ -558,18 +581,26 @@ code-page=1251
 <h2 class="footnotes">&#1057;&#1085;&#1086;&#1089;&#1082;&#1080;: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">ес&shy;тест&shy;вен&shy;но всё
-пи&shy;рат&shy;ское т.к. цен&shy;ник по&shy;тя&shy;ну&shy;ло бы не каж&shy;дое юр.ли&shy;цо</div></div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">ес&shy;тест&shy;вен&shy;но всё пи&shy;рат&shy;ское
+т.к. цен&shy;ник по&shy;тя&shy;ну&shy;ло бы не каж&shy;дое юр.ли&shy;цо</div></div>
 
 <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara">Sparital Radar Topology Mission —
 мно&shy;го&shy;лет&shy;няя про&shy;грам&shy;ма NASA по съёмке от&shy;но&shy;си&shy;тель&shy;ных вы&shy;сот
 по&shy;верх&shy;нос&shy;ти зем&shy;ли. На 2017 год есть пол&shy;ное по&shy;кры&shy;тие пла&shy;не&shy;ты по
 сет&shy;ке с ша&shy;гом 30 мет&shy;ров</div></div>
 
-<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara">на са&shy;мом де&shy;ле, цве&shy;тов мо&shy;жет быть боль&shy;ше, но я
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara">Во
+вся&shy;ком слу&shy;чае, мне не уда&shy;лось за&shy;дать пол&shy;ностью свои ID для мо&shy;его
+Garmin; не&shy;стан&shy;дарт&shy;ные ID он прос&shy;то иг&shy;но&shy;ри&shy;ро&shy;вал</div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara">на са&shy;мом де&shy;ле, цве&shy;тов мо&shy;жет быть боль&shy;ше, но я
 по&shy;ка не стал раз&shy;би&shy;рать&shy;ся</div></div>
 
-<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara">клю&shy;че&shy;вые сло&shy;ва для по&shy;ис&shy;ка: TYP file editor,
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5">5</a></sup> <div class="footpara">В кон&shy;тек&shy;сте
+кар&shy;тин&shy;ки пра&shy;виль&shy;нее ска&shy;зать, что у ли&shy;ний на кар&shy;те есть не тол&shy;щи&shy;на, а
+вы&shy;со&shy;та, по&shy;сколь&shy;ку ши&shy;ри&shy;на кар&shy;тин&shy;ки у нас вс&shy;ег&shy;да 32 пик&shy;се&shy;ля</div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6">6</a></sup> <div class="footpara">клю&shy;че&shy;вые сло&shy;ва для по&shy;ис&shy;ка: TYP file editor,
 Garmin map style editor</div></div>
 
 
