@@ -1,4 +1,4 @@
-#+TITLE:       Альпинизм — не спорт!
+#+TITLE:       Альпинизм~--- не спорт!
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
 #+DATE:        2016-06-21
