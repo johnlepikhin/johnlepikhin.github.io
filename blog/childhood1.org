@@ -1,0 +1,10 @@
+#+TITLE:       Как я провёл лето, осень и вообще всё детство
+#+AUTHOR:      Evgenii Lepikhin
+#+EMAIL:       johnlepikhin@gmail.com
+#+DATE:        2017-12-02 Sat
+#+URI:         /blog/%y/%m/%d/как-я-провёл-лето-осень-и-вообще-всё-детство
+#+KEYWORDS:    юмор
+#+TAGS:        юмор
+#+LANGUAGE:    ru
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
