@@ -1,4 +1,4 @@
-#+TITLE:       Что такое свобода\nbsp{}— почти по Пелевину
+#+TITLE:       Что такое свобода — почти по Пелевину
 #+AUTHOR:      Evgenii Lepikhin
 #+EMAIL:       e.lepikhin@corp.mail.ru
 #+DATE:        2017-10-01
